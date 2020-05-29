@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Освещение</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Освещение</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/light/light.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для освещения объектов на сцене в <b>Unity</b> используются источники света. По умолчанию при создание сцены создается <b>Directional Light</b> который освещает все объекты на сцене. Чтобы создать источник света нажмите правой кнопкой мыши по окну иерархии, далее выберите <b>light</b> и выберите источник света который вам нужен. Так же можно поменять истоник света на компоненте <b>Light</b> свойство <b>Type</b>. Любой источник света по умолчанию состоит из двух компонентов <b>Transfrom</b> и <b>Light</b>.</div>
+            </div>
+        </div>
+        <!--Direction Light-->
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Directional Light</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/light/dirlight.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Direction Light</b> - направленный источник света который имитирует солнечный свет. Освещает все объекты сцены.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Свойства</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>color</b> - цвет излучаемого света.</div>
+                <div class="dividergrey"></div>
+                <div><b>intensity</b> - яркость света.</div>
+            </div>
+        </div>
+        <!--Point Light-->
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Point Light</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/light/Pointlight.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Point Light</b> - источник света который излучает свет во все стороны из своего местоположения, а также освещает объекты внутри сферы размер радиуса которого можно назначать с помошью значения <b>Range</b>.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Свойства</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Range</b> - дальность излучения света.</div>
+                <div class="dividergrey"></div>
+                <div><b>Color</b> - цвет излучаемого света.</div>
+                <div class="dividergrey"></div>
+                <div><b>Intensity</b> - яркость света. </div>
+            </div>
+        </div>
+        <!--Spot Light-->
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Spot Light</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/light/spotlight.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Spot Light</b> - источник света который излучает свет внутрь конуса. Конус можно задать свойствами <b>Spot Angle</b> и <b>Range</b>. Свет попадает на объекты которые находяться в области конуса.
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="h4 text-center">Свойства</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div><b>Range</b> - дальность излучения света.</div>
+            <div class="dividergrey"></div>
+            <div><b>Spot Angle</b> - задает угол конуса в градусах.</div>
+            <div class="dividergrey"></div>
+            <div><b>Color</b> - цвет излучаемого света.</div>
+            <div class="dividergrey"></div>
+            <div><b>Intensity</b> - яркость света.</div>
+        </div>
+    </div>
+    <!--Area Light-->
+    <div class="divider"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="h3 text-center">Area Light</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <img class="w-100"src="file:///android_asset/img/light/arealight.png" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div><b>Area Light</b> - источник света который светит во всех направлениях на одной стороне прямоугольной области плоскости. Прямоугольная область задается свойствами <b>Wight</b> и <b>Height</b>. Данный истоник света работает только во время запекания света и не оказывает никакого эффекта на объекты во время игры.
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h4 class="h4 text-center">Свойства</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div><b>Range</b> - дальность излучения света.</div>
+        <div class="dividergrey"></div>
+        <div><b>Shape</b> - можно выбрать форму прямоугольную или диска.</div>
+        <div class="dividergrey"></div>
+            <div><b>Width</b> - ширина области плоскости.</div>
+        <div class="dividergrey"></div>
+                <div><b>Height</b> - длина области плоскости.</div>
+        <div class="dividergrey"></div>
+                    <div><b>Color</b> - цвет излучаемого света.</div>
+        <div class="dividergrey"></div>
+                        <div><b>Intensity</b> - яркость света.</div>
+    </div>
+</div>
+    </div>
+</body>
+</html>

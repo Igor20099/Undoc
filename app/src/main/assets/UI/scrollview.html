@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>ScrollView</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Scroll View</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/scrollview/scrollview.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Scroll View</b> - <b>UI</b> объект который включает в себя прокручиваемый <b>Content</b> который является дочерним объектом <b>Viewport</b> и 2 скроллбара <b>Scrollbar Horizontal</b> и <b>Scrollbar Vertical</b>. Удобство заключается в том что весь контент который мы хотим прокручивать мы делаем дочерним объектом <b>Content</b>. Растягивая <b>Content</b> за <b>Viewport</b> автоматически повляются <b>Scrollbar</b> горизонтальный или вертикальный в зависимости от того как мы растянули <b>Content</b>. <b>Viewport</b> показывает только тот контент который находится в области. За его пределами он скрыт благодаря компоненту <b>Mask</b> у <b>Viewport</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/scrollview/scrollviewport.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для примера добавим 12 изображений в <b>Content</b> и добавим на <b>Content</b> компонент <b>Grid Layout Group</b> который расположит изображения в виде сетки, а также по <b>X</b> и <b>Y</b> добавим отступы на 10 пискелей и в <b>Constaint</b> выберем <b>Fixed Column Count</b> и <b>Column Count</b> количество столбцов поставим 4</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/scrollview/scrollviewex.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Компонент Scroll Rect</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/scrollview/scrollviewrect.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Content</b> - контент который нужно прокручивать. По умолчанию присвоен дочерний объект <b>Content</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Horizontal</b> - позволяет включить или выключить горизонтальную прокрутку</div>
+                <div class="dividergrey"></div>
+                <div><b>Vertical</b> - позволяет включить или выключить вертикальную прокрутку</div>
+                <div class="dividergrey"></div>
+                <div><b>Viewport</b> - в это свойство присваивается <b>Viewport(область просмотра)</b>. По умолчанию присвоен дочерний объект <b>Viewport</b></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Horizontal scrollbar</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>В это поле можно присвоить горизонтальный скроллбар. По умолчанию присвое дочерний <b>UI</b> объект <b>Scrollbar Horizontal</b></div>
+                <div><b>Visibility</b> - это свойство отвечает за видимость скроллбара.
+
+                    <ul class="list-group">
+                        <li class="list-group-item"> <b>Permanent</b> - всегда будет виден</li>
+                        <li class="list-group-item"><b>Auto-hide</b> - автоматически скрывать полосу прокрутки, когда не требуется прокрутка по этой оси. Прямоугольник <b>Viewport(область просмотра)</b>  не будет изменен</li>
+                        <li class="list-group-item"><b>Auto Hide And Expand Viewport</b> - автоматически скрывается полоса прокрутки, когда прокрутка по этой оси не требуется, и соответственно расширяйться прямоугольник <b>Viewport(область просмотра)</b>.</li>
+
+                    </ul>
+                   </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Vertical scrollbar</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>В это поле можно присвоить вертикальный скроллбар. По умолчанию присвоен дочерний <b>UI</b> объект <b>Scrollbar Vertical</b></div>
+                <div><b>Visibility</b> - это свойство отвечает за видимость скроллбара. 
+                    
+                    <ul class="list-group">
+                                <li class="list-group-item"> <b>Permanent</b> - всегда будет виден</li>
+                                <li class="list-group-item"><b>Auto-hide</b> - автоматически скрывать полосу прокрутки, когда не требуется прокрутка по этой оси. Прямоугольник <b>Viewport(область просмотра)</b>  не будет изменен</li>
+                                <li class="list-group-item"><b>Auto Hide And Expand Viewport</b> - автоматически скрывается полоса прокрутки, когда прокрутка по этой оси не требуется, и соответственно расширяйться прямоугольник <b>Viewport(область просмотра)</b>.</li>
+                                
+                              </ul>
+                    
+                    </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Событие On Value Changed(Vector2)</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Событие происходит когда вы делаете какие то изменеия в <b>Scrollrect</b>. Например прокручивайте <b>Scrollbar</b></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

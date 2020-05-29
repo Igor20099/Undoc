@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Коллайдеры</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Коллайдеры</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/collider.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Collider</b> - это компонент который отвечает за обработку столкновений или пересечений. Коллайдер придает объекту материальность. Столкнувшись с объектом у которого есть компонент коллайдер вы не сможете через него пройти. Исключением ялвяется включения свойства<b>Is Trigger</b>. Если вы сделайте коллайдер триггером то объект становится проходимым, но в тоже время когда вы будете сталкиваться с ним будет происходит событие которые напишите в коде. Область коллайдера помечается зелеными линиями. Коллайдеры бывают <b>3D</b> и <b>2D(название коллайдера оканчивается на 2D)</b></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Box Collider</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/boxcollider.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Box Collider</b> - представляет из себя куб ( <b>Box Collider 2D</b> квадрат).</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/boxcollider2.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Свойства</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Edit Collider</b> - редактирования коллайдера.Что бы завершить редактирование нажите на эту же кнопку.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/editcollider.gif" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Is Trigger</b> - активирует <b>Trigger</b>. Это значит что другие объекты могут проходить мимо этого объекта, но обработка столкновений так же происходит. Вы должны использовать такие методы как <b>OnTriggerEnter</b>, <b>OnTriggerStay</b> и <b>OnTriggerExit</b> для проверки столкновений</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Material</b> - физический материал, который определяет свойства столкновений, такие как трение и отскок.</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Center</b> - позволяет изменять позицию коллайдера относительно объекта по трем осям <b>X</b>, <b>Y</b> и <b>Z</b></div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Size</b> - позволяет изменять размер коллайдера.</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Sphere Collider</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/spherecollider.png" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Sphere Collider</b> - представляет из себя сферу ( <b>Circle Collider 2D</b> круг).</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/circlecollider.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Свойства</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Edit Collider</b> - редактирования коллайдера. Что бы завершить редактирование нажите на эту же кнопку.</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Is Trigger</b> - активирует <b>Trigger</b>. Это значит что другие объекты могут проходить мимо этого объекта, но обработка столкновения так же происходит. Вы должны использовать такие методы как <b>OnTriggerEnter</b>, <b>OnTriggerStay</b> и <b>OnTriggerExit</b> для проверки столкновений</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Material</b> - физический материал, который определяет свойства столкновений, такие как трение и отскок.</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Center</b> - позволяет изменять позицию коллайдера относительно объекта по трем осям <b>X</b>, <b>Y</b> и <b>Z</b></div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Radius</b> - позволяет изменять радиус коллайдера</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Capsule Collider</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/capsulecollider.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Capsule Collider</b> - представляет из себя капсулу.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/capsulecollider2.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Свойства</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Edit Collider</b> - редактирования коллайдера. Что бы завершить редактирование нажите на эту же кнопку.</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Is Trigger</b> - активирует <b>Trigger</b>. Это значит что другие объекты могут проходить мимо этого объекта, но обработка столкновения так же происходит. Вы должны использовать такие методы как <b>OnTriggerEnter</b>, <b>OnTriggerStay</b> и <b>OnTriggerExit</b> для проверки столкновений</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Material</b> - физический материал, который определяет свойства столкновений, такие как трение и отскок.</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Center</b> - позволяет изменять позицию коллайдера относительно объекта по трем осям <b>X</b>, <b>Y</b> и <b>Z</b></div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Radius</b> - позволяет изменять радиус коллайдера</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Height</b> - позволяет изменять высоту коллайдера</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Direction</b> - позволяет менять направление коллайдера по одной из осей <b>X</b>, <b>Y</b> или <b>Z</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/capsulecol.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Edge Collider 2D</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/edgecollider.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Edge Collider 2D</b> - данный колайдер есть только у <b>2D</b> объектов. При добавления данного коллайдера он отоброзится в виде линии. В режиме <b>Edit collider</b> вы можете ставить точки с зажатой левой кнопкой мыши и двигая создавать углы.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/edge collider.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Свойства</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Edit Collider</b> - редактирования коллайдера. Что бы завершить редактирование нажите на эту же кнопку.</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Is Trigger</b> - активирует <b>Trigger</b>. Это значит что другие объекты могут проходить мимо этого объекта, но обработка столкновения так же происходит. Вы должны использовать такие методы как <b>OnTriggerEnter</b>, <b>OnTriggerStay</b> и <b>OnTriggerExit</b> для проверки столкновений</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Material</b> - физический материал, который определяет свойства столкновений, такие как трение и отскок.</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Offset</b> - позволяет сдвигать коллайлер</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Edge Radius</b> - радиус коллайдера</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Points</b> - отображает массив созданных вами точек на коллайдере.</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Polygon Collider 2D</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/polygoncollider.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Polygon Collider 2D</b> - данный колайдер есть только у <b>2D</b> объектов. При добавления данного коллайдера он отоброзится в виде квадрата. В режиме <b>Edit collider</b> вы можете ставить точки с зажатой левой кнопкой мыши и двигая создавать грани.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/polygoncollider.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Коллайдер может быть отредактирован вручную, но чаще всего удобнее позволить <b>Unity</b> автоматически определить его форму. Это можно сделать путём перетаскивания ассета спрайта из окна проекта на компонент <b>Polygon Collider 2D</b>  в окно инспектора. Вы можете напрямую редактировать форму полигона, удерживая клавишу <b>Shift</b> при перемещении мыши с выделенной гранью (edge) или вершиной (vertex) в окне сцены. Вы можете перемещать существующую вершину путём удерживания <b>Shift</b> когда курсор мыши расположен над ней. Если вы будете удерживать <b>Shift</b> и перемещать курсор мыши, находящийся над гранью, тогда в месте расположения курсора будет создана новая вершина. Чтобы удалить нужную вершину, расположите курсор над ней и зажав <b>ctrl</b> нажмите на ней левой кнопкой мыши.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/polygoncollider2.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Свойства</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Edit Collider</b> - редактирования коллайдера. Что бы завершить редактирование нажите на эту же кнопку.</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Is Trigger</b> - активирует <b>Trigger</b>. Это значит что другие объекты могут проходить мимо этого объекта, но обработка столкновения так же происходит. Вы должны использовать такие методы как <b>OnTriggerEnter</b>, <b>OnTriggerStay</b> и <b>OnTriggerExit</b> для проверки столкновений</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Material</b> - физический материал, который определяет свойства столкновений, такие как трение и отскок.</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Offset</b> - позволяет сдвигать коллайлер</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Points</b> - отображает созданные вами точки</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Давайте на примере посмотрим как работает коллайдеры создадим два объекта круг и прямоугольник. Добавим на круг <b>Rigidbody 2D</b> для того чтобы у круга появилась гравитация.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/collider example.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Мы видим что круг проходит сквозь прямоугольник. Для того чтобы такого не произошло нужно добавить коллайдеры <b>Circle Collider 2D</b> на круг и <b>Box Collider 2D</b> на прямоугольник.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/colliders/colliderexample2.gif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

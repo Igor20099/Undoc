@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Panel</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Panel</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/panel/panel.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Panel является контейнером для других UI элементов и в отличие от Canvas имеет компонент Image который отображает изображение Panel.По умолчанию имеет компоненты: Rect Transform, Image, Canvas Render</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Компонент Image</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/panel/panelimage.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Source Image</b> - в этом свойстве вы можете изменить изображения для Panel</div>
+                <div class="dividergrey"></div>
+                <div><b>Color</b> - это свойство позоляет выбрать цвет для Panel</div>
+                <div class="dividergrey"></div>
+                <div><b>Material</b> - это свойство позволяет в качестве изображения ставить Material</div>
+                <div class="dividergrey"></div>
+                <div><b>Fill Center</b> - если это свойство включено то изображение заливаеться полностью выбранным цветом, если выключено то остается только обводка</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Image Type</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Simple</b> - масштабирует весь спрайт равноценно.</div>
+                <div class="dividergrey"></div>
+                <div><b>Sliced</b> -  использует разделение спрайта на 3x3 так, чтобы масштабирование не искажало углы, а растянута была только центральная часть.</div>
+                <div class="dividergrey"></div>
+                <div><b>Tiled</b> -  похоже на Sliced, но вместо растягивания центральной части, она повторяется (заполняется тайлами). Для спрайтов без каких-либо границ, весь спрайт будет заполнен тайлами.</div>
+                <div class="dividergrey"></div>
+                <div><b>Filled</b> - отображает спрайт так же, как это делает <b>Simple</b>, за исключением того, что он заполняет спрайт, начиная с определенной точки в установленном направлении и количестве заданным методом.</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Raycast Target</b> - позволяет взаимодействовать с UI объектами с помощью щелчков, нажатий и другого поведения пользователя. Каждый раз, когда происходит одно из этих событий, компонент GraphicsRaycaster будет выполнять проверки от пикселя до ограничивающего прямоугольника, чтобы выяснить, с каким элементом взаимодействовал элемент. Отключая эту опцию для неинтерактивных элементов, мы уменьшаем количество элементов, через которые необходимо выполнить GraphicsRaycaster, сохраняя производительность.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

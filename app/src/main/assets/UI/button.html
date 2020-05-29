@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Button</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Button</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/button/button.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Стандартная кнопка в <b>Unity</b>. По умолчанию состоит из компонентов: <b>Rect Transform</b>, <b>Canvas Render</b>, <b>Image</b> и <b>Button</b>. Так же у <b>UI</b> объекта <b>Button</b> есть дочерний объект <b>Text</b> который отображает текст на кнопке(UI объекты можно вкладывать в друг друга. За отображение кнопки отвечает компонент <b>Image</b>.</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Компонент Button</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/button/buttoncomp.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Interactable</b> - это свойство означает будет ли кнопка активна или нет</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Transition(переходы между состояниями кнопки)</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>None</b> - без перехода</div>
+                <div class="dividergrey"></div>
+                <div><b>Color Tint</b> - изменения цвета при переключение на другое состояние. Выбран по умолчанию</div>
+                <div class="dividergrey"></div>
+                <div><b>Sprite Swap</b> - изменения спрайта кнопки при переходе на другое состояние</div>
+                <div class="dividergrey"></div>
+                <div><b>Animation</b> - анимация кнопки перехода в другое состояние</div>
+                <div class="dividergrey"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Теперь сами состоянии кнопки:</div>
+                <div class="dividergrey"></div>
+                <div><b>Normal</b> - стартовое состояние</div>
+                <div class="dividergrey"></div>
+                <div><b>Hightlighted</b> - когда курсор мышки над кнопкой</div>
+                <div class="dividergrey"></div>
+                <div><b>Pressed</b> - когда кнопка нажата</div>
+                <div class="dividergrey"></div>
+                <div><b>Selected</b> - когда выбрана кнопка. Если вы нажмите на другую кнопку то текущая кнопка перейдет в состояние <b>Normal</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Disabled</b> - когда кнопка не активна (отключено свойство <b>Interactable</b>)</div>        
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Обработчик событий On Click()</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для того чтобы кнопка выполняна какое нибудь событие нажмите на <b>+</b> в окне <b>On Click</b> что добавить событие. Далее перетащите объект со скриптом в это окно и выберите функцию которое хотите вызвать со скрипта, нажав на <b>No Function</b> (метод обязательно должен быть с модификатором <b>public</b>)</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/button/buttonclick.gif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Mesh Render</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Mesh Filter</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/meshrender/meshfilter.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <b>Mesh Filter</b> берет сетку объекта из ваших ассетов и передает ее в <b>Mesh Renderer</b> для рендеринга на экране.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <b>Mesh</b> - ссылка на сетку объета, которая будет отображена.</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+        <div class="col-md-12">
+            <h2 class="h2 text-center">Mesh Render</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <img class="w-100"src="file:///android_asset/img/components/meshrender/meshrender.png" alt="">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <b>Mesh Renderer</b> - компонент для отображения 3D объекта.</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                 <b>Materials</b> - список материалов. 
+                 <ul class="list-group">
+                    <li class="list-group-item"><b>Size</b> - 
+                        укажите количество материалов в <b>Mesh Renderer</b>. Если вы уменьшите размер списка материалов, <b>Unity</b> удалит элементы в конце списка. </li>
+                    <li class="list-group-item"><b>Element</b> - свойство куда вы можете добавить материл. Первый элемент всегда называется <b>Element 0</b>.</li>
+                    
+                  </ul>
+                 
+                </div>
+        </div>
+    </div>
+        <div class="dividergrey"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <b>Cast Shadows</b> - укажите, будет ли объект отбрасывать тени, когда на нее светит источник света. 
+                <ul class="list-group">
+                    <li class="list-group-item"><b>On</b> - объект отбрасывает тень, когда на него светит свет, отбрасывающий тень.</li>
+                    <li class="list-group-item"> <b>Off</b> - 
+                        объект не отбрасывает тени. </li>
+                        <li class="list-group-item"><b>Two Sided</b> - 
+                            объект отбрасывает двусторонние тени с обеих сторон.</li>
+                             <li class="list-group-item"><b>Shadows Only</b> - 
+                                  видна только тень, скрывает объект.</li>
+                    
+                  </ul>
+               </div>
+        </div>
+    </div>
+        <div class="dividergrey"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <b>Receive Shadows</b> - 
+                включите эту опцию, чтобы объект отображал любые тени, которые отбрасываются на него. Это поддерживается только при использовании <b>Progressive Lightmapper</b>.</div>
+        </div>
+    </div>
+        <div class="dividergrey"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                <b>Motion Vectors</b> - 
+                укажите, следует ли использовать векторы движения для отслеживания движения пикселя в пространстве экрана от одного кадра к другому. Вы можете использовать эту информацию для применения эффектов постобработки, таких как размытие в движении.
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <b>Camera Motion Only</b> - используйте только движение камеры для отслеживания движения.</li>
+                    <li class="list-group-item"><b>Per Object Motion</b> - используйте для отслеживания движения объекта.</li>
+                    <li class="list-group-item"><b>Force No Motion	</b> - не отслеживать движения.</li>
+                    
+                  </ul>
+                 </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

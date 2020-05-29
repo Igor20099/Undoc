@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Canvas</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Canvas</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/canvas/canvas.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Canvas</b> - это абстрактное пространство на котором распологаются все UI объекты в Unity. Когда вы создаете UI объект автоматически создаться Canvas и UI элемент станет дочерним объекта этого Canvas. У Canvas по умолчанию такие компоненты: Rect Transform(аналог Transfrom только для UI объектов), Canvas, Canvas Scaler, Graphic Raycaster.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/canvas/canvasexample.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Компонент Canvas</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/canvas/canvascomp.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Render Mode</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Screen Space - Overlay</b> - в этом режиме Canvas масштабируется для заполнения всего экрана, а затем рисуется напрямую, не ссылаясь на сцену или камеру (интерфейс нарисуется даже если в сцене вообще нет камеры). Если размер или разрешение экрана меняются, интерфейс автоматически перемасштабируется. Интерфейс рисуется поверх любой другой графики, такой как вид из камеры.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/canvas/CanvasOverlay.png" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Screen Space - Camera</b> - в этом режиме, Canvas отображается как если бы он был нарисован на плоском объекте, на некотором расстоянии заданной камеры. Экранный размер интерфейса не меняется с расстоянием, т.к. он всегда масштабируется чтобы в точности заполнять пирамиду видимости камеры (camera frustum). Если размер или разрешение экрана, или пирамида видимости, изменяются – интерфейс автоматически перемасштабируется, чтобы помещаться. Любые 3д объекты сцены, расположенные ближе к камере, чем плоскость интерфейса, будут отрисованы “над” интерфейсом, в то время как остальные объекты, находящиеся за плоскостью, будут загорожены.
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/canvas/CanvasCamera.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>В этом режиме так же появляется свойство Render Camera(камера с которой будет отображаться UI).В это свойство нужно переместить камеру с окна иерархии
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/canvas/canvascamera.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div> и Plane Distance - расстояние, на котором плоскость UI должна быть расположена перед камерой.
+                </div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>World Space</b> - этот режим рисует интерфейс, как если бы он был плоским объектом сцены. В отличие от режима Screen Space - Camera, плоскость не обязана быть перпендикулярной направлению камеры, и может быть ориентирована как угодно. Размер холста может быть установлен через его Rect Transform, но его экранный размер будет зависеть от угла зрения и расстояния от камеры. Другие объекты сцены могут проходить сзади, сквозь, или спереди холста.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/canvas/CanvasWorldSpace.png" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Компонент Canvas Scaler</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">UI Scale Mode</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Constant Pixel Size</b> — <b>GameObject</b> сохраняет свой размер в пикселях, игнорируя размеры экрана.</div>
+                <div class="dividergrey"></div>
+                <div><b>Constant Physical Size</b> — <b>GameObject</b> сохраняет свои физические размеры, игнорируя размеры экрана и его разрешение.</div>
+                <div class="dividergrey"></div>
+                <div><b>Scale With Screen Size</b> — <b>GameObject </b> растягивается вместе с экраном.</div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

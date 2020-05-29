@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Горячие клавиши</title>
+</head>
+<body>
+    <div class="container">
+         <!--File-->
+         <div class="row mt-2">
+            <div class="col-md-12">
+                    <h4 class="h4 text-center">Меню File</h4>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-sm table-striped shadow p-3 mb-5 bg-white rounded" >
+                <thead>
+                    <tr>
+                        <th scope="col">Windows</th>
+                        <th scope="col">Mac</th>
+                        <th scope="col">Действие</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ctrl + N</td>
+                        <td>cmd + N</td>
+                        <td>New Scene(Новая сцена)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + O</td>
+                        <td>cmd + O</td>
+                        <td>Open Scene(Открыть сцену)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + S</td>
+                        <td>cmd + S</td>
+                        <td>Save Scene(Сохранить сцену)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + S</td>
+                        <td>cmd + shift + S</td>
+                        <td>Save Scene As...(Сохранить сцену как...)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + B</td>
+                        <td>cmd + shift + B</td>
+                        <td>Build(Собрать игру)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + B</td>
+                        <td>cmd + B</td>
+                        <td>Build and run(Собрать игру и запустить)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                    <h4 class="h4 text-center">Меню Edit</h4>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-sm table-striped shadow p-3 mb-5 bg-white rounded">
+                <thead>
+                    <tr>
+                        <th scope="col">Windows</th>
+                        <th scope="col">Mac</th>
+                        <th scope="col">Действие</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ctrl + Z</td>
+                        <td>cmd + Z</td>
+                        <td>Undo(Отменить)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + Y</td>
+                        <td>cmd + shift + Z</td>
+                        <td>Redo(Повторить)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + X</td>
+                        <td>cmd + X</td>
+                        <td>Cut(Вырезать)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + C</td>
+                        <td>cmd + C</td>
+                        <td>Copy(Копировать)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + V</td>
+                        <td>cmd + V</td>
+                        <td>Paste(Вставить)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + D</td>
+                        <td>cmd + D</td>
+                        <td>Duplicate(Дублировать)</td>
+                    </tr>
+                    <tr>
+                        <td>shift + del</td>
+                        <td>shift + del</td>
+                        <td>Delete(Удалить)</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>F</td>
+                        <td>Frame (centre) selection(Центрировать камеру сцены на объекте)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + F</td>
+                        <td>cmd + F</td>
+                        <td>Find(Найти)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + A</td>
+                        <td>cmd + A</td>
+                        <td>Select All(Выбрать всё)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + P</td>
+                        <td>cmd + P</td>
+                        <td>Play(Запуск игры)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + P</td>
+                        <td>cmd + shift + P</td>
+                        <td>Pause(Пауза)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + alt + P</td>
+                        <td>cmd + alt + P</td>
+                        <td>Step(Перейти на следующий кадр в режиме <b>Pause</b>)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+         <!--Assets-->
+         <div class="row">
+            <div class="col-md-12">
+                    <h4 class="h4 text-center">Меню Assets</h4>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-sm table-striped shadow p-3 mb-5 bg-white rounded">
+                <thead>
+                    <tr>
+                        <th scope="col">Windows</th>
+                        <th scope="col">Mac</th>
+                        <th scope="col">Действие</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ctrl + R</td>
+                        <td>cmd + R</td>
+                        <td>Refresh(Обновить ассеты)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Game Object-->
+        <div class="row">
+            <div class="col-md-12">
+                    <h4 class="h4 text-center">Меню Game Object</h4>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-sm table-striped shadow p-3 mb-5 bg-white rounded">
+                <thead>
+                    <tr>
+                        <th scope="col">Windows</th>
+                        <th scope="col">Mac</th>
+                        <th scope="col">Действие</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ctrl + shift + N</td>
+                        <td>cmd + shift + N</td>
+                        <td>New Game Object(Создать игровой объект)</td>
+                    </tr>
+                    <tr>
+                        <td>alt + shift + N</td>
+                        <td>alt + shift + N</td>
+                        <td>New Empty Child To Selected Game Object(Создать дочерний игровой объект на выбранном объекте)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + alt + F</td>
+                        <td>cmd + alt + F</td>
+                        <td>Move to view(Переместить объект к точке вида)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + F</td>
+                        <td>cmd + shift + F</td>
+                        <td>Align with view(Выровнять по виду)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Window-->
+        <div class="row">
+            <div class="col-md-12">
+                    <h4 class="h4 text-center">Меню Window</h4>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-sm table-striped shadow p-3 mb-5 bg-white rounded">
+                <thead>
+                    <tr>
+                        <th scope="col">Windows</th>
+                        <th scope="col">Mac</th>
+                        <th scope="col">Действие</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ctrl + 1</td>
+                        <td>cmd + 1</td>
+                        <td>Scene(Окно Сцены)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + 2</td>
+                        <td>cmd + 2</td>
+                        <td>Game(Окно игры)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + 3</td>
+                        <td>cmd + 3</td>
+                        <td>Inspector(Окно инспектора)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + 4</td>
+                        <td>cmd + 4</td>
+                        <td>Hierarchy(Окно иерархии)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + 5</td>
+                        <td>cmd + 5</td>
+                        <td>Project(Окно проекта)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + 6</td>
+                        <td>cmd + 6</td>
+                        <td>Animation(Окно анимации)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + 7</td>
+                        <td>cmd + 7</td>
+                        <td>Profiler(Профайлер)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + 9</td>
+                        <td>cmd + 9</td>
+                        <td>Asset store(Окно магазина ассетов)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + 0</td>
+                        <td>cmd + 0</td>
+                        <td>Asset server</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + C</td>
+                        <td>cmd + shift + C</td>
+                        <td>Console(Консоль)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + tab</td>
+                        <td></td>
+                        <td>Next Window(Следующее окно)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + tab</td>
+                        <td></td>
+                        <td>Previous Window(Предыдущее окно)</td>
+                    </tr>
+                    <tr>
+                        <td>alt + F4</td>
+                        <td></td>
+                        <td>Quit(Закрыть Unity)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+         <!--Tools-->
+         <div class="row">
+            <div class="col-md-12">
+                    <h4 class="h4 text-center">Tools(Панель инструментов)</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>LMB</b> - левая кнопка мыши</div>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-sm table-striped shadow p-3 mb-5 bg-white rounded">
+                <thead>
+                    <tr>
+                        <th scope="col">Windows</th>
+                        <th scope="col">Mac</th>
+                        <th scope="col">Действие</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Q</td>
+                        <td>Q</td>
+                        <td>Pan(Перемещение камеры сцены)</td>
+                    </tr>
+                    <tr>
+                        <td>W</td>
+                        <td>W</td>
+                        <td>Move(Перемещение)</td>
+                    </tr>
+                    <tr>
+                        <td>E</td>
+                        <td>E</td>
+                        <td>Rotate(Вращение)</td>
+                    </tr>
+                    <tr>
+                        <td>R</td>
+                        <td>R</td>
+                        <td>Scale(Масштабирование)</td>
+                    </tr>
+                    <tr>
+                        <td>Z</td>
+                        <td>Z</td>
+                        <td>Pivot Mode Toggle(Переключение Pivot режима)</td>
+                    </tr>
+                    <tr>
+                        <td>X</td>
+                        <td>X</td>
+                        <td>Pivot Rotation Toggle(Переключение поворота Pivot)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + LMB</td>
+                        <td>cmd + LMB</td>
+                        <td>Snap(Привязка)</td>
+                    </tr>
+                    <tr>
+                        <td>V</td>
+                        <td>V</td>
+                        <td>Vertex Snap(Привязка вершин)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+         <!--Unity-->
+         <div class="row">
+            <div class="col-md-12">
+                    <h4 class="h4 text-center">Unity</h4>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-sm table-striped shadow p-3 mb-5 bg-white rounded">
+                <thead>
+                    <tr>
+                        <th scope="col">Windows</th>
+                        <th scope="col">Mac</th>
+                        <th scope="col">Действие</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>cmd + ,</td>
+                        <td>Preferences(Окно настроек)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>cmd + H</td>
+                        <td>Hide Unity(Скрыть Unity)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>cmd + alt + H</td>
+                        <td>Hide others(Скрыть другое)</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>cmd + Q</td>
+                        <td>Quit Unity(Закрыть Unity)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+          <!--Selection-->
+          <div class="row">
+            <div class="col-md-12">
+                    <h4 class="h4 text-center">Selection(Выделения)</h4>
+            </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped shadow p-3 mb-5 bg-white rounded">
+                <thead>
+                    <tr>
+                        <th scope="col">Windows</th>
+                        <th scope="col">Mac</th>
+                        <th scope="col">Действие</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ctrl + shift + 1</td>
+                        <td>cmd + shift + 1</td>
+                        <td>Load Selection 1(Загрузить выделение 1)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + 2</td>
+                        <td>cmd + shift + 2</td>
+                        <td>Load Selection 2(Загрузить выделение 2)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + 3</td>
+                        <td>cmd + shift + 3</td>
+                        <td>Load Selection 3(Загрузить выделение 3)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + 4</td>
+                        <td>cmd + shift + 4</td>
+                        <td>Load Selection 4(Загрузить выделение 4)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + 5</td>
+                        <td>cmd + shift + 5</td>
+                        <td>Load Selection 5(Загрузить выделение 5)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + 6</td>
+                        <td>cmd + shift + 6</td>
+                        <td>Load Selection 6(Загрузить выделение 6)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + 7</td>
+                        <td>cmd + shift + 7</td>
+                        <td>Load Selection 7(Загрузить выделение 7)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + 8</td>
+                        <td>cmd + shift + 8</td>
+                        <td>Load Selection 8(Загрузить выделение 8)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + shift + 9</td>
+                        <td>cmd + shift + 9</td>
+                        <td>Load Selection 9(Загрузить выделение 9)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + alt + 1</td>
+                        <td>cmd + alt + 1</td>
+                        <td>Savе Selection 1(Сохранить выделение 1)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + alt + 2</td>
+                        <td>cmd + alt + 2</td>
+                        <td>Savе Selection 2(Сохранить выделение 2)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + alt + 3</td>
+                        <td>cmd + alt + 3</td>
+                        <td>Savе Selection 3(Сохранить выделение 3)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + alt + 4</td>
+                        <td>cmd + alt + 4</td>
+                        <td>Savе Selection 4(Сохранить выделение 4)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + alt + 5</td>
+                        <td>cmd + alt + 5</td>
+                        <td>Savе Selection 5(Сохранить выделение 5)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + alt + 6</td>
+                        <td>cmd + alt + 6</td>
+                        <td>Savе Selection 6(Сохранить выделение 6)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + alt + 7</td>
+                        <td>cmd + alt + 7</td>
+                        <td>Savе Selection 7(Сохранить выделение 7)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + alt + 8</td>
+                        <td>cmd + alt + 8</td>
+                        <td>Savе Selection 8(Сохранить выделение 8)</td>
+                    </tr>
+                    <tr>
+                        <td>ctrl + alt + 9</td>
+                        <td>cmd + alt + 9</td>
+                        <td>Savе Selection 9(Сохранить выделение 9)</td>
+                    </tr>
+                </tbody>
+            </table>
+           </div>
+           <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-success">Вы также можете посмотреть и изменить горячие клавиши в <b>Edit -> Shortcuts...</b></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

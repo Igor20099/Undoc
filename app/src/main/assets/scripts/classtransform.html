@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Класс Transform</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classtransform/classtransform.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Класс <b>Transform</b> позволяет обращаться к свойствам и методам компонента <b>Transform</b>. Вам не нужно получать ссылку на компонент <b>Transform</b> на объекте на котором находится скрипт, так как переменная <b>transform</b> создается автоматически потому что компонент <b>Transform</b> находится у всех игровых объектов по умолчанию. Вы можете получить ссылку на компонент <b>Transform</b> другого объекта создав сериализованное приватное поле класса <b>Transform</b> (<b>[SerializeField] private Transform transform;</b>)  и перетащив в это поле этот объект.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Свойства</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>transform.position</b> - позволяет изменять позицию объекта в мировых координатах. Принимает в качестве значения <b>Vector3</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Рассмотрим пример. Создадим игровой объект <b>Cube</b> и создадим скрипт <b>Cube</b> и повесим его на игровой объект <b>Cube</b>. В методе <b>Update</b> будем изменять его позицию для этого напишем такой код</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classtransform/classtransform.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Метод <b>Update</b> выполняется каждый кадр и это то что нам нужно для изменения позиции объекта. Далее <b>transform.position</b> мы плюсуем <b>Vector3</b> где сдвигаем его позицию по <b>X</b> каждый кадр. Так же мы создали поле <b>speed</b>(скорость) которое мы можем изменять в окне инспектора и умножаем его на вектор. Далее чтобы это все плавно работало мы умножаем на <b>Time.deltaTime</b>.Игровой объект <b>Cube</b> будет двигаться вправо с той скоростью которое мы зададим в инспекторе в поле <b>speed</b>(по умолчанию значение поля равно нулю)</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classtransform/transformex.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Мы можем вместо <b>new Vector3(1,0,0)</b> написать константу <b>Vector3.right</b>(движение по <b>X</b> вправо на 1). По сути это одно и тоже</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classtransform/transright.png" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Методы</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>transform.Translate(Vecor3 vector3)</b> - позволяет изменять позицию объекта. Принимает в качестве первого параметра <b>Vector3</b> Есть много перегрузок данного метода. Например так же есть такая перегрузка transform.Translate(Vector3 vector3, Space space). <b></b> это перечесление. Есть <b>Space.world</b> что озночает изменение позиции относительно глобальных координат и <b>Space.self</b> изменение позиции относительно локальных координат. Вот как будет выглядить код перемещения из предыдущего примера с помощью метода <b>Tranlate</b> вместо <b>transform.position</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classtransform/trans.png" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>transform.Rotate(Vector3 axis, float angle, Space space)</b> - данный метод позволяет вращать объект вокруг осей <b>X</b>,<b>Y</b> и <b>Z</b>. Мы можем так же задать параметры как у <b>transform.Translate</b>. Есть так же другая перегрузка где первые три параметра это углы <b>xAngle</b>,<b>yAngle</b> и <b>zAngle</b>. Создадим эти три поля в окне инспектора и присвоим им значение. Так же для плавности не забывайте умножать на <b>Time.deltaTime</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classtransform/transrotate.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classtransform/transrot.gif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

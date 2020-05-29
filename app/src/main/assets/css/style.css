@@ -1,0 +1,33 @@
+.blue {
+    color: blue;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.divider {
+    height: 1px;
+    width:100%;
+    display:block; /* for use on default inline elements like span */
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #000000;
+  }
+
+  img {
+      margin-bottom: 8px;
+  }
+  .dividergrey {
+      height: 1px;
+      width:100%;
+      display:block; /* for use on default inline elements like span */
+      margin: 6px 0;
+      overflow: hidden;
+      background-color: #a9a9a9;
+    }
+

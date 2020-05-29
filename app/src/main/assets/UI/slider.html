@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Slider</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Slider</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/slider/slider.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Slider</b> - <b>UI</b> объект прокрутки значения от минимального к максимальному. По умолчанию состоит из компонентов: <b>Rect Transfrom</b> и <b>Slider</b>. Так же состоит из <b>Backgound(Image)</b>, <b>Fill Area(Пустой GameObject)</b> у которого дочерний элемент <b>Fill(Image)</b> и <b>Handle Slide Area(пустой GameObject)</b> у которого дочерний элемент Handle(Image)</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Компонент Slider</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/slider/slidercomp.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Interactable</b> - это свойство означает будет ли <b>Slider</b> активен или нет</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Transition(переходы между состояниями Slider)</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>None</b> - без перехода</div>
+                <div class="dividergrey"></div>
+                <div><b>Color Tint</b> - изменения цвета при переключение на другое состояние. Выбран по умолчанию</div>
+                <div class="dividergrey"></div>
+                <div><b>Sprite Swap</b> - изменения спрайта <b>Slider</b> при переходе на другое состояние</div>
+                <div class="dividergrey"></div>
+                <div><b>Animation</b> - анимация Slider перехода в другое состояние</div>
+                <div class="dividergrey"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Теперь сами состоянии <b>Slider</b>:</div>
+                <div><b>Normal</b> - стартовое состояние</div>
+                <div class="dividergrey"></div>
+                <div><b>Hightlighted</b> - когда курсор мышки над <b>Handle</b> у <b>Slider</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Pressed</b> - когда <b>Handle</b> у <b>Slider</b> нажата</div>
+                <div class="dividergrey"></div>
+                <div><b>Selected</b> - когда выбран <b>Handle</b> у <b>Slider</b>. Если вы нажмите на другой <b>UI</b> объект то <b>Handle</b> у <b>Slider</b> перейдет в состояние <b>Normal</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Disabled</b> - когда <b>Handle</b> у <b>Slider</b> не активен (отключено свойство <b>Interactable</b>)</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Direction</b> - направление движения <b>Handle(ползунка)</b>.
+                    <ul class="list-group">
+                        <li class="list-group-item"><b>LeftToRight </b> - слева на право</li>
+                        <li class="list-group-item"><b>RightToLeft</b> - справо на лево</li>
+                        <li class="list-group-item"><b>TopToBottom</b> - сверху вниз</li>
+                        <li class="list-group-item"><b>BottomToLeft</b> - снизу в верх</li>
+
+                    </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <img class="w-100"src="file:///android_asset/img/ui/slider/toggledirection.gif" alt="">
+        </div>
+    </div>
+        <div class="dividergrey"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <div><b>Min</b> - минимально значение</div>
+            <div class="dividergrey"></div>
+            <div><b>Max</b> - максимальное значение</div>
+            <div class="dividergrey"></div>
+            <div><b>Whole Number</b> - по умолчание значение чисел типа <b>Float</b>. При включение этого свойства значения будут целыми числами.</div>
+            <div class="dividergrey"></div>
+            <div><b>Value</b> - позволяет установить значение <b>Slider</b> в диапазоне от <b>Min</b> до <b>Max</b></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <img class="w-100"src="file:///android_asset/img/ui/slider/togglevalue.gif" alt="">
+    </div>
+</div>
+        <div class="divider"></div>
+<div class="row">
+    <div class="col-md-12">
+        <h4 class="h4 text-center">Событие On Value Changed</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div>Событие происходит при изменения значения <b>Slider</b></div>
+    </div>
+</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Toggle</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Toggle</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/toggle/toggle.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Toggle</b> - это UI объект который имеет состояние включения / выключения. По умолчанию состоит из компонентов: <b>Rect Transfrom</b> и <b>Toggle</b>. А также есть дочерние обекты такие как <b>Background(Image)</b> и <b>Label(Text)</b>. У <b>Background(Image)</b> так же есть дочерний элемент <b>Checkmark(Image)</b></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Компонент Toggle</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/toggle/togglecomp.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Interactable</b> - это свойство означает будет ли Toggle активен или нет</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Transition(переходы между состояниями Toggle)</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>None</b> - без перехода</div>
+                <div class="dividergrey"></div>
+                <div><b>Color Tint</b> - изменения цвета при переключение на другое состояние. Выбран по умолчанию</div>
+                <div class="dividergrey"></div>
+                <div><b>Sprite Swap</b> - изменения спрайта кнопки при переходе на другое состояние</div>
+                <div class="dividergrey"></div>
+                <div><b>Animation</b> - анимация <b>Toggle</b> перехода в другое состояние</div>
+                <div class="dividergrey"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Теперь сами состоянии <b>Toggle</b>:</div>
+                <div><b>Normal</b> - стартовое состояние</div>
+                <div class="dividergrey"></div>
+                <div><b>Hightlighted</b> - когда курсор мышки над <b>Toggle</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Pressed</b> - когда <b>Toggle</b> нажата</div>
+                <div class="dividergrey"></div>
+                <div><b>Selected</b> - когда выбран <b>Toggle</b>. Если вы нажмите на другой <b>UI</b> объект то текущий <b>Toggle</b> перейдет в состояние <b>Normal</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Disabled</b> - когда <b>Toggle</b> не активен (отключено свойство <b>Interactable</b>)</div>
+                <div class="dividergrey"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Рассмотрим другие свойства:</div>
+                <div><b>Is On</b> - активен ли Toggle или нет(если да то будет стоять галочка)</div>
+                <div class="dividergrey"></div>
+                <div><b>Group</b> - вы можете группировать <b>Toggle</b>. Для этого нужно создать пустой объект, повесить на него компонент <b>Toggle Group</b> и переместить все Toggle в этот пустой объект, в свойстве <b>Group</b> у каждого Toggle выбрать пустой игровой объект на котором повешен компонент Toggle Group. Теперь при выборе одного Toggle другие становяться не активными</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/toggle/togglegroup.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">On Value Changed</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>У <b>Toggle</b> есть обработчик событий <b>On Value Changed</b>. Обрабатываеться событие когда <b>Toggle</b> включен галочкой и когда нет. Давайте создадим картинку <b>Image</b> и при нажатии на <b>Toggle</b> когда будет стоят галочка объект будет виден на сцене, а когда мы убирем галочку объект исчезнет со сцены. Для этого в окне <b>On Value Changed</b> нажмите на <b>+</b> чтобы добавить метод перетащите <b>Image</b> c окна иерархии на <b>On Value Changed</b> и выберите в <b>GameObject</b> где <b>No Function</b>, функцию <b>SetActive</b>.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/toggle/toggleactive.gif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

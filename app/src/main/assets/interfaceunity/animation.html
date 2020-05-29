@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Окно анимации</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Окно анимации</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animation/animation.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>В этом окне вы можете создавать анимации для игровых объектов.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для того чтобы открыть окно анимации зайдите в меню <b>Window</b> и выберите <b>Animation</b> (клавиши <b>Ctrl + 6</b>) и перетащите окно в удобную для вас область.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animation/animation.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Что бы создать анимацию выберите объект и в окне анимации нажмите кнопку <b>Create</b>. Перед этим создайте в главной директории <b>Assets</b> папку <b>Animations</b> и в папке <b>Animations</b> папку <b>Cube</b>. Напишите название вашей анимации и нажмите сохранить. Вместе с анимацией автоматически будет создан <b>Animator Controller</b>.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animation/animationsave.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Что бы создать другую анимацию нажмите на кнопку с названием анимации и выберите <b>Create New Clip...</b>. Также дайте название анимации и сохраните.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animation/animationsave2.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                 <h3 class="h3 text-center">Анимация свойства компонента</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Вы можете создавать анимации свойства компонента. Например создадим анимацию передвижения куба. Для этого нажмите на кнопку <b>Add Property</b>. Далее выберите <b>Transform</b> и на <b>position x</b> нажмите на <b>+</b>. Далее переместите курсор на любой кадр в моем случае 30. Нажмите на кнопку записи с красным кружком и измените значение <b>position x</b> на <b>10</b>. Далее не забудьте еще раз нажать кнопку записи. Переместите курсор на первый кадр и нажмите <b>Play</b> чтобы проиграть анимацию.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animation/animationmove.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Вы так же можете изменять скорость проигрывания анимации изменяя значение <b>Samples</b>. Если уменьшить то анимация будет медленней, если увеличить то быстрее.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animation/animationsample.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                 <h3 class="h3 text-center">Добавление ключевого кадра</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Что бы добавить ключевой кадр нажмите на кнопку <b>Add keyframe</b>. Добавим ключевой кадр на 15 кадре и с помошью кнопки записи зададим движение по оси <b>y</b> на значение <b>3</b>. Не забудьте после этого снова нажать на кнопку записи чтобы сохранить значение на ключевом кадре.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animation/animationaddkey.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Чтобы удалить ключевой кадр нажмите на него и нажмите клавишу <b>Delete</b>.
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                 <h3 class="h3 text-center">Добавление события на ключевой кадр</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animation/animationev.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>На любой кадр можно назначить событие. Точнее любой метод который находиться на объекте и в коде помечен модификатором <b>public</b>. Например сделаем так что на последнем кадре объект уничтожится. Для этого я создал скрипт. В нем я создал публичный метод <b>DestroyObject</b>, а сам скрипт добавил на куб. Далее в окне анимации ставим курсор на последний кадр и нажимаем кнопку <b>Add event</b>. В окне инcпектора выбираем метод <b>DestoyObject()</b>. Чтобы проверить данное событие перейдите во вкладку <b>Game</b> и запустите игру.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animation/animationevent.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Чтобы удалить событие на ключевом кадре выберите его и нажмите клавишу <b>Delete</b>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                 <h3 class="h3 text-center">Спрайтовая анимация</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для создания спрайтовой анимации можно просто перетащить спрайты в окно анимации. На одном кадре будет один спрайт.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animation/animationsprite.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                 <h3 class="h3 text-center">Кривые плавности анимации</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Вы можете изменять плавность анимаций с помощью кривых линий. Для этого нажмите на <b>Curves</b>. У каждого свойства будет линия своего цвета.
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animation/animationcurves.gif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="h5 text-center">Методы Awake, Start, Update, FidexUpdate, LateUpdate.</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Метод Awake</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/methostartupdate/awake.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Метод Awake</b> - вызывается один раз после создания экземпляра объекта в сцене перед методом <b>Start</b>. Обычно в нем пишут тот код который должен выполниться перед методом <b>Start</b></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Метод Start</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/methostartupdate/start.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Метод Start</b> - вызывается один раз перед первым вызовом метода <b>Update</b> после метода <b>Awake</b></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Метод Update</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/methostartupdate/update.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Метод Update</b> - вызывается один раз за кадр. Это основное событие для прорисовки кадра и код который находится в методе <b>Update</b> будет выполняться каждый кадр</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Метод FixedUpdate</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/methostartupdate/fixedupdate.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Метод FixedUpdate</b> - <b>FixedUpdate</b> не зависит от <b>Update</b>, и может вызываться как чаще него так и реже (обычно вызывается реже, если FPS достаточно высок). Это событие может быть вызвано несколько раз в кадре, если FPS низкий а может быть и вообще не вызвано между кадрами, если FPS высокий. Все физические расчеты движка и обновление происходит сразу после <b>FixedUpdate</b>. При применении расчетов движения внутри <b>FixedUpdate</b>, вам не нужно умножать ваше значение на <b>Time.deltaTime</b>. Это потому, что <b>FixedUpdate</b> вызывается из таймера, независимого от частоты кадров.</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Метод LateUpdate</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/methostartupdate/lateupdate.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Метод LateUpdate</b> - вызывается один раз в кадре, после завершения <b>Update</b>. Любые расчеты, которые осуществляются в <b>Update</b> будет завершены, при вызове <b>LateUpdate</b>. Основным использованием <b>LateUpdate</b> обычно является слежение за камерой от третьего лица. Если вы осуществите движение вашего персонажа в событии <b>Update</b>, то движения камеры и расчётов её месторасположения можете вести в событии <b>LateUpdate()</b>. Это будет гарантировать, что персонаж прошел полностью перед камерой, и закрепил свое расположение.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

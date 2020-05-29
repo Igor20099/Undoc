@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Типы данных</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Типы данных</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/datatype.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>GameObject</b> - все игровые объекты в <b>Unity</b> являеются типом <b>GameObject</b>. В окне инспектора отобразится поле куда вы можете перетащить игровой объект(Prefab)</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/gameobject.gif" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>string</b> - строковый тип данных. В окне инспектора появится поле для воода текста</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/string.gif" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>int</b> - целые числа. В окне инспектора отображается как поле для ввода целых чисел</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/int.gif" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>float</b> - числа с плавающей точкой. Обязательно в коде в конце значения нужно ставить букву f(например 3.14f). В окно инспектора отображается как поле для ввода чисел</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/float.gif" alt="">
+            </div>
+    </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>bool</b> - принимает два значение <b>true(правда)</b> или <b>false(ложь)</b>. В окне испектора отображается как <b>Toggle</b>. Если поставлена галочка то <b>true</b>, иначе <b>false</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/bool.png" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Vector2</b> - является структурой. Представляет собой координаты  <b>X</b> и <b>Y</b>. Используется в качестве параметра например у компонента(класса) <b>Transform</b>  для перемещения объекта по координатам <b>X</b> и <b>Y</b>. В окне инспектора отображается два поля ввода чисел <b>X</b> и <b>Y</b>  типа <b>float</b> </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/vector2.png" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Vector3</b> - является структурой. Представляет собой координаты  <b>X</b>,<b>Y</b> и <b>Z</b>. Используется в качестве параметра например у компонента(класса) <b>Transform</b>  для перемещения объекта по координатам <b>X</b>, <b>Y</b> и <b>Z</b>. В окне инспектора отображается три поля для ввода чисел <b>X</b>, <b>Y</b> и <b>Z</b> типа <b>float</b> </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/vector3.png" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>enum</b> - перечисление который представляет собой набор целочисленных констант. Для примера создадим <b>enum</b> и назовем его <b>Direction</b>, где будет четыре константы <b>Left</b>, <b>Right</b>, <b>Up</b>, <b>Down</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/enum.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Далее объявим в классе поле <b>direction</b> тип которого наш созданный <b>enum</b> Direction</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/enum2.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>enum</b> будет отображаться в инспекторе как выпадающий список со всеми объявленными константами. Вы можете задать логику при выборе определенной константы.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/enum3.gif" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Любой класс является типом данных. Так же и у компонентов есть свой класс например вы можете создать поле <b>Transform</b> и присвоить этому полю ссылку на компонент <b>Transform</b> и далее использовать все его свойства и методы.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/transform.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/transform.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Вы также можете присвоить ссылку на <b>Transform</b> другого объекта.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/datatype/transform2.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-success">Атрибут <b>[SerializeField]</b> перед написанием поля используется для отображения приватного поля в окне инспектора</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-success">Так же имейте ввиду если вы будете обращаться к полю у которого нет ссылки на объект (например у вас в поле <b>GameObject</b> не будет ссылки на объект <b>GameObject</b>) то <b>Unity</b> выдаст вам ошибку <b>NullReferenceException</b>. Вы можете посмотреть эту ошибку в окне <b>Console</b></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

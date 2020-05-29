@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Rect Transform</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Rect Transform</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/recttransform/recttransform.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Rect Transform</b> - компонент который по умолчанию находится у каждого <b>UI</b> объекта. С помощью этого компонента вы можете расположить <b>UI</b> объект в области <b>Canvas</b>. <b>Canvas</b> ялвяется родительским объектом для всех <b>UI</b> объектов и изменять <b>Rect Transform</b> вы можете только у дочерних объектов <b>Canvas</b></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Свойства</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Pos X, Pos Y, Pos Z</b> - позволяет пермещать UI объект внутри <b>Canvas</b> по трем осям</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div> <b>Width</b> - ширина области UI объекта</div>
+                <div class="dividergrey"></div>
+                <div> <b>Height</b> - длина области UI объекта</div>
+                <div class="dividergrey"></div>
+                <div><b>Rotation</b> - это свойство отвечает за вращение объекта по трем осям <b>X</b>, <b>Y</b> и <b>Z</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Scale</b> - это свойство отвечает за маштаб объекта по трем осям <b>X</b>, <b>Y</b> и <b>Z</b></div>
+        </div>
+    </div>
+        <div class="divider"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <h4 class="h4 text-center">Anchors(Якоря привязки)</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div><b>Min</b> -  точка привязки для левого нижнего угла прямоугольника определяется как доля размера родительского прямоугольника. 0,0 соответствует привязке к нижнему левому углу родительского элемента, а 1,1 соответствует привязке к верхнему правому углу родительского элемента.</div>
+            <div class="dividergrey"></div>
+            <div><b>Max</b> -  точка привязки для верхнего правого угла прямоугольника определяется как доля размера родительского прямоугольника. 0,0 соответствует привязке к нижнему левому углу родительского элемента, а 1,1 соответствует привязке к верхнему правому углу родительского элемента.</div>
+            <div class="dividergrey"></div>
+            <div><b>Pivot</b> -  расположение точки поворота, вокруг которой вращается прямоугольник, определяется как доля размера самого прямоугольника. 0,0 соответствует нижнему левому углу, а 1,1 соответствует верхнему правому углу.</div>
+            <div class="dividergrey"></div>
+            <div><b>Anchor Presets</b> -  предустановки которые позволяет привязать <b>UI</b> объект к одной из области <b>Canvas</b>. При простом нажатии он привязывает <b>Anchors</b> к выбранной области и позиция объекта будет отчитываться от этой выбранной области. А с зажатой <b>Alt</b> переносит и сам объект в эту область. К примеру если вы выбрали привязку к левому верхнему углу <b>Canvas</b>, то и расстояния до объекта по трем осям будет рассчитываться с левого верхнего угла, а если значения по осям будет ноль то объект будет в левом верхнем углу.</div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <img class="w-100"src="file:///android_asset/img/components/recttransform/anchors.gif" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>

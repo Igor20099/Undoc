@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Event System</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Система событий Event System.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/eventsystem/eventsystem.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div> <b>Event System</b> — это система отвечающая за обработку разных событий в сцене. Например ввод с клавиатуры, нажатие кнопки мыши или обработка касаний на телефоне. <b>Event System</b> добавляется вместе с UI объектом. Без него например <b>UI</b> кнопка будет не кликабельной.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+            В общем <b>Event System</b> позволяет определять какой <b>GameObject</b> выбран, управлять способами ввода которые используются, управлять рейкастингом(Raycasting)(в переводе озночает бросание лучей. Когда луч проходит через объект происходит столкновение с этим объектом и если за этим объектом были другие объекты то луч пройдет и через них(обработка столкновений пройзойдет только в том случае если у объектов есть компонент коллайдера). Например когда вы нажимаете на объект левой кнопкой мышки вы бросаете луч с игровой камеры который будет пересекать объект и будет происходить столкновение с этим объектом)
+        </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                Рассмотрим рейкастеры: <br>
+                <b>Graphic Raycaster</b> - используется для работы с UI объектами <br>
+                <div class="dividergrey"></div>
+                <b>Physics 2D Raycaster</b> — используется для взаимодействия с физическими объектами в 2D
+                <br>
+                <div class="dividergrey"></div>
+                <b>Physics Raycaster</b> — используется для взаимодействия с физическими объектами в 3D
+                <br>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

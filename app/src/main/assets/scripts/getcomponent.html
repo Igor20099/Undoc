@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Метод GetComponent</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/getcomponent/getcomponent.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Метод <b>GetComponent&lt;Название компонента&gt;()</b> позволяет получить ссылку на класс компонента и использовать его свойства и методы. В треугольных скобках пишется название компонента. Комопнент у которого вы хотите получить ссылку обязательно должен быть добавлен на объект.</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Метод GetComponentInChildren</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/getcomponent/getcomponentchildren.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Метод <b>GetComponentInChildren&lt;Название компонента&gt;()</b> отличается от метода <b>GetComponent</b> тем что вы получаете ссылку на класс компонента дочернего объекта. В треугольных скобках пишем название компонента. Компонент у которого вы хотите получить ссылку обязательно должен быть добавлен на объект.</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Рассмотрим на примере создадим объект <b>GameObject A</b> и в него вложим объект <b>GameObject B</b>. Добавим на <b>GameObject B</b> компонент <b>Box Collider</b>. Создадим скрипт и добавим его на <b>GameObject A</b>. Объявим в скрипте поле <b>[SerializeField] private BoxCollider gameObjectBBoxCollider;</b> и в методе <b>Start</b> присвоем ссылку на компонент <b>Box Collider</b> дочернего объекта <b>GameObject B</b> с помощью метода <b>GetComponentInChildren</b> вот так <b>gameObjectBBoxCollider = GetComponentInChildren&lt;BoxCollider&gt;();</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/getcomponent/getcomponentchild.gif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

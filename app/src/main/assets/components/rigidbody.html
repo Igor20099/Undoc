@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Rigidbody</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Rigidbody</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/rigidbody/rigidbody.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Rigidbody</b> - компонент который наделяет объект физическими свойствами такими как гравитация и т.д.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/rigidbody/rigidbodyex.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Свойства</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Material</b> - свойство для физический материала, который определяет свойства столкновений, такие как трение и отскок.</div>
+                <div class="dividergrey"></div>
+                <div><b>Mass</b> - масса объекта</div>
+                <div class="dividergrey"></div>
+                <div><b>Drag</b> - торможение объекта</div>
+                <div class="dividergrey"></div>
+                <div><b>Angular Drag</b> - угловое торможение объекта</div>
+                <div class="dividergrey"></div>
+                <div><b>Use Gravity</b> - данное свойство позволяет включить или выключить гравитацию</div>
+                <div class="dividergrey"></div>
+                <div><b>Is Kinematic</b> - при включении, объект не будет управляться физическим движком, и сможет управляться только при помощи <b>Transform</b>.</div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="h5 text-center">Constraints</h5>
+            </div>
+        </div>
+        <div><b>Freeze Position</b> - позволяет заморозить движение по осям <b>X</b>,<b>Y</b>,<b>Z</b></div>
+        <div class="dividergrey"></div>
+        <div><b>Freeze Rotation</b> - позволяет заморозить вращение по осям <b>X</b>,<b>Y</b>,<b>Z</b></div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Rigidbody 2D</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/rigidbody/rigidbody2d.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Body Type</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Body Type</b> - тип тела.
+                    <ul class="list-group">
+                        <li class="list-group-item"> <b>Dynamic</b> — динамическое тело с массой</li>
+                        <li class="list-group-item"> <b>Kinematic</b> — тело без массы</li>
+                        <li class="list-group-item"> <b>Static</b> — жестко зафиксированное тело</li>
+                    </ul>
+                    </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="h5 text-center">Dynamic</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <b>Dynamic Rigidbody 2D</b> обладает полным набором доступных свойств, таких как конечная масса и сопротивление, и подвержен влиянию силы тяжести. Это тип установлен по умолчанию для <b>Rigidbody 2D</b>.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h6 class="h6 text-center">Свойства</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Material</b> - свойство для физический материала, который определяет свойства столкновений, такие как трение и отскок.</div>
+                <div class="dividergrey"></div>
+                <div><b>Simulated</b> - это свойство используется для включения и выключения влиянии физики на объект. По умолчанию включен</div>
+                <div class="dividergrey"></div>
+                <div><b>Use Auto Mass</b> - установите флажок, если вы хотите, чтобы <b>Rigidbody 2D</b> автоматически определял массу <b>GameObject</b> из его <b>Collider 2D</b>.</div>
+                <div class="dividergrey"></div>
+                <div><b>Mass</b> - установите массу для <b>GameObject</b>. Это свойство отображается серым цветом, если вы выбрали <b>Use Auto Mass</b>.</div>
+                <div class="dividergrey"></div>
+                <div><b>Linear Drag</b> - коэффициент сопротивления, влияющий на позиционное движение.</div>
+                <div class="dividergrey"></div>
+                <div><b>Angular Drag</b> - коэффициент сопротивления, влияющий на вращательное движение.</div>
+                <div class="dividergrey"></div>
+                <div><b>Gravity Scale</b> - определите степень влияния гравитации на <b>GameObject</b>.</div>
+                <div class="dividergrey"></div>
+                <div><b>Collision Detection</b> - выберите, как будет обнаруживаться столкновения между <b>Collider 2D</b>. 
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item"> <b>Discrete</b> - когда вы устанавливаете <b>Collision Detection</b> на <b>Discrete</b>, игровые объекты с <b>Rigidbody 2D</b> и <b>Collider 2D </b> могут перекрываться или проходить друг через друга во время обновления физики, если они движутся достаточно быстро.</li>
+                        <li class="list-group-item"> <b>Continuous</b> - Когда <b>Collision Detection</b> установлен на <b>Continuous</b>, игровые объекты с <b>Rigidbody 2D</b> и <b>Collider 2D</b> не проходят друг через друга во время обновления. Вместо этого <b>Unity</b> вычисляет первую точку удара любого из 2D коллайдеров и перемещает туда GameObject. Обратите внимание, что это занимает больше процессорного времени, чем дискретное.</li>
+                      </ul>
+                    
+                 </div>
+                <div class="dividergrey"></div>
+                <div><b>Sleeping Mode</b> - режим сна для <b>GameObject</b>, чтобы сэкономить процессорное время, когда <b>GameObject</b> находится в покое.
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item"> <b>Never Sleep</b> - cпящий режим отключен (его следует по возможности избегать, так как это может повлиять на системные ресурсы).</li>
+                        <li class="list-group-item"> <b>Start Awake</b> - <b>GameObject</b> изначально не спит.</li>
+                        <li class="list-group-item"> <b>Start Asleep</b> - <b>GameObject</b> изначально спит, но его можно разбудить при столкновениях.</li>
+                      </ul>
+                    
+                   
+                    
+                </div>
+
+                <div class="dividergrey"></div>
+
+                <div><b>Interpolate</b> - выберите, как движение <b>GameObject </b> интерполируется между обновлениями физики (полезно, когда движение имеет тенденцию к рывкам).
+                    <ul class="list-group">
+                        <li class="list-group-item"> <b>None</b> - сглаживание движений не применяется.</li>
+                        <li class="list-group-item"> <b>Interpolate</b> - движение сглаживается на основе позиций <b>GameObject</b> в предыдущих кадрах.</li>
+                        <li class="list-group-item"> <b>Extrapolate</b> - движение сглаживается на основе оценки его положения в следующем кадре.</li>
+                      </ul>
+                    
+                    
+                 </div>
+                <div class="dividergrey"></div>
+                <div><b>Constraints</b> - выставите любые ограничения на движение <b>Rigidbody 2D</b>.
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item"> <b>Freeze Position</b> - позволяет заморозить движение по осям <b>X</b>,<b>Y</b>,<b>Z</b>.</li>
+                        <li class="list-group-item"> <b>Freeze Rotation</b> - позволяет заморозить вращение по осям <b>X</b>,<b>Y</b>,<b>Z</b>.</li>
+                        
+                      </ul>
+                   
+                </div> 
+            </div> 
+        </div>
+
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="h5 text-center">Kinematic</h5>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <b>Kinematic Rigidbody 2D</b> представляет собой тип тела без влияние на него гравитации и силы, в то время как на <b>Dynamic Rigidbody 2D</b> влияют гравитация и сила. По этой причине он быстрее и требует меньше системных ресурсов, чем <b>Dynamic Rigidbody 2D</b>. <b>Kinematic Rigidbody 2D</b> разработан для явного перемещения через метод <b>Rigidbody2D.MovePosition</b> или вращения через метод <b>Rigidbody2D.MoveRotation</b> в коде. 
+
+                    <b>Kinematic Rigidbody 2D</b> движется через свою скорость, но на скорость не влияет сила или гравитация. <b>Kinematic Rigidbody 2D</b> не сталкивается с другими <b>Kinematic Rigidbody 2D</b> или со <b>Static 2D Rigidbody</b>, он сталкивается только с <b>Dynamic rigidbody 2D</b>. Подобно <b>Static RigidBody 2D</b>, <b>Kinematic Rigidbody 2D</b> ведет себя как неподвижный объект (как если бы оно имело бесконечную массу) во время столкновений. Свойства массы не доступны с этим типом телосложения.</div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h6 class="h6 text-center">Свойства</h6>
+                        </div>
+                    </div>
+                    <div><b>Material</b> - свойство для физический материала, который определяет свойства столкновений, такие как трение и отскок.</div>
+                <div class="dividergrey"></div>
+                    <div><b>Simulated</b> - это свойство используеться для включения и выключения влиянии физики на объект. По умолчанию включен.</div>
+                <div class="dividergrey"></div>
+                    <div><b>Use Full Kinematic Contacts	</b> - включите этот параметр (установите флажок), если хотите, чтобы <b>Kinematic Rigidbody 2D</b> сталкивался со всеми типами тел <b>Rigidbody 2D</b>. Это похоже на <b>Dynamic Rigidbody 2D</b>, за исключением того, что <b>Kinematic Rigidbody 2D</b> не перемещается физическим движком при контакте с другим компонентом <b>Rigidbody 2D</b>. Вместо этого он действует как неподвижный объект с бесконечной массой. Когда использование <b>Use Full Kinematic Contact</b> отключено, <b>Kinematic Rigidbody 2D</b> сталкивается только с <b>Dynamic Rigidbody 2D</b>.</div>
+                    <div><b>Collision Detection</b> - выберите, как будет обнаруживаться столкновения между <b>Collider 2D</b>. 
+                    
+                            <ul class="list-group">
+                                <li class="list-group-item"> <b>Discrete</b> - когда вы устанавливаете <b>Collision Detection</b> на <b>Discrete</b>, игровые объекты с <b>Rigidbody 2D</b> и <b>Collider 2D </b> могут перекрываться или проходить друг через друга во время обновления физики, если они движутся достаточно быстро.</li>
+                                <li class="list-group-item"> <b>Continuous</b> - Когда <b>Collision Detection</b> установлен на <b>Continuous</b>, игровые объекты с <b>Rigidbody 2D</b> и <b>Collider 2D</b> не проходят друг через друга во время обновления. Вместо этого <b>Unity</b> вычисляет первую точку удара любого из 2D коллайдеров и перемещает туда GameObject. Обратите внимание, что это занимает больше процессорного времени, чем дискретное.</li>
+                              </ul>
+                            
+                    </div>
+                <div class="dividergrey"></div>
+                        <div><b>Sleeping Mode</b> - режим сна для <b>GameObject</b>, чтобы сэкономить процессорное время, когда <b>GameObject</b> находится в покое.
+                            
+                            <ul class="list-group">
+                                <li class="list-group-item"> <b>Never Sleep</b> - cпящий режим отключен (его следует по возможности избегать, так как это может повлиять на системные ресурсы).</li>
+                                <li class="list-group-item"> <b>Start Awake</b> - GameObject изначально не спит.</li>
+                                <li class="list-group-item"> <b>Start Asleep</b> - GameObject изначально спит, но его можно разбудить при столкновениях.</li>
+                              </ul>
+                            
+                           
+                            
+                             </div>
+
+                <div class="dividergrey"></div>
+        
+                        <div><b>Interpolate</b> - выберите, как движение <b>GameObject</b> интерполируется между обновлениями физики (полезно, когда движение имеет тенденцию к рывкам).
+                            <ul class="list-group">
+                                <li class="list-group-item"> <b>None</b> - сглаживание движений не применяется.</li>
+                                <li class="list-group-item"> <b>Interpolate</b> - движение сглаживается на основе позиций <b>GameObject</b> в предыдущих кадрах.</li>
+                                <li class="list-group-item"> <b>Extrapolate</b> - движение сглаживается на основе оценки его положения в следующем кадре.</li>
+                              </ul>
+                            
+                            
+                             </div>
+                <div class="dividergrey"></div>
+                        <div><b>Constraints</b> - выставите любые ограничения на движение <b>Rigidbody 2D</b>.
+                            
+                            <ul class="list-group">
+                                <li class="list-group-item"> <b>Freeze Position</b> - позволяет заморозить движение по осям <b>X</b>,<b>Y</b>,<b>Z</b>.</li>
+                                <li class="list-group-item"> <b>Freeze Rotation</b> - позволяет заморозить вращение по осям <b>X</b>,<b>Y</b>,<b>Z</b>.</li>
+                                
+                              </ul>
+                           
+                        </div>
+                    </div> 
+                </div>
+
+
+
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="h5 text-center">Static</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <b>Static Rigidbody 2D</b> жестко зафиксированный тип тела без какого либо движения или гравитации. Если что-то сталкивается с ним, Static Rigidbody 2D ведет себя как неподвижный объект (как будто он имеет бесконечную массу). Это также наименее ресурсоемкий тип тела для использования. <b>Static Rigidbody 2D</b> сталкивается только с <b>Dynamic Rigidbody 2D</b>. Столкновение двух <b>Static Rigidbody 2D</b> не возможно, поскольку они не предназначены для перемещения.</div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h6 class="h6 text-center">Свойства</h6>
+                        </div>
+                    </div>
+                    <div><b>Material</b> - свойство для физический материала, который определяет свойства столкновений, такие как трение и отскок.</div>
+                <div class="dividergrey"></div>
+                   <div><b>Simulated</b> - это свойство используеться для включения и выключения влиянии физики на объект. По умолчанию включен.</div>
+            </div>
+        </div>
+       
+       
+    </div>
+
+</body>
+</html>

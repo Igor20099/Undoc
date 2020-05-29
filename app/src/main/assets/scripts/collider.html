@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Обработка столкновений</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/collider/collider.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>За обработку столкновений коллайдеров отвечает методы <b>OnCollisionEnter</b>, <b>OnCollisionStay</b> и <b>OnCollisionExit</b>. Эти методы принимают один параметр <b>Collision</b> это коллайдер объекта с которым вы сталкиваетесь. С помощью этого параметра вы можете обращаться к свойствам и методам другого объекта. Для этого надо написать collision.gameObject и далее через точку выбрать свойство или метод можно так же обратиться через коллайдер collision.collider например что бы обратиться к свойству имени объекта нужно написать collision.gameObject.name. Рассмотрим эти методы подобно</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>OnCollisionEnter</b> - срабатывает при первом столкновение с объектом. Рассмотрим пример создадим два куба один назовем Player другой Enemy и присвоим им в окне инспекторе соответствующие теги. Создадим скрипт Player и повесим его на объект Player. Напишем такой код</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/collider/collider2.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Сначало опишем в методе <b>Update</b> перемещение объекта через метод <b>transform.Translate</b>. Далее в методе OnCollisionEnter мы обращаемся к коллайдеру другого объекта.Метод пишем условие где в <b>CompareTag</b> проверяем если у другого объекта тег Enemy и далее если есть то выполниться код в условие где в консоль выведиться сообщение "Вы столкнулись с " и имя объекта. Метод Debug.Log(сообщение) выводит на консоль сообщение. Теперь при каждом первом столкновении с объектом с тегом Enemy будем выводитсья сообщение в консоли.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/collider/collider.gif" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>OnCollisionStay</b> - срабатывает когда объекты сталкивается каждый кадр. Например когда стоют рядом с друг другом их коллайдеры все время соприкасаются. Поменяем метод OnCollisionEnter на OnCollisionStay и посмотрим на результат</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/collider/collider3.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/collider/collider2.gif" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>OnCollisionExit</b> - срабатывает когда объект выходит из столкновения с объектом. Когда объект только сталкиватся срабатывает метод <b>OnCollisionEnter</b>, когда стоит рядом и их коллайдеры соприкасаются <b>OnCollisionStay</b>, а после того как объект отходит от объекта после столкновения <b>OnCollisionExit</b>. Изменим метод <b>OnCollisionStay</b> на <b>OnCollisionExit</b> и посмотрим на результат</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/collider/collider4.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/collider/collider3.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Обработка столкновений c Trigger</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Если вы включите свойcтво <b>Is Trigger</b> на компоненте коллайдера, то через него можно будет проходить но обработка стокновений будет все равно выполняться только уже в методах <b>OnTriggerEnter</b>, <b>OnTriggerStay</b> и <b>OnTriggerExit</b> и принимают в качестве параметра эти методы Collider объекта с которым сталкиваетесь. Выполняются точно также как и методы <b>OnCollisionEnter</b>, <b>OnCollisionStay</b> и <b>OnCollisionExit</b>. Рассмотрим пример. Сделаем наш объект Enemy триггером включив свойство <b>Is Trigger</b> на Box Collider. Далее отключите свойство <b>Use Gravity</b> на комопоненте <b>Rigidbody</b>(отключение гравитации) чтобы наш объект не провалился так как он становится не материальным и будет проваливаться через объекты. Напишем такой код</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/collider/trigger.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>В методе <b>OnTriggerEnter</b> который срабатывает при первом столкновении мы пишем условие если у коллайдера с объектом Enemy есть тег Enemy, то он выведет нам сообщение в консоли и нащ объект <b>Player</b> будет проходить через объект <b>Enemy</b>. Посмотрим на результат</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/collider/trigger.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Trigger</b> может использоваться например для создания какой нибудь области в которой у игрока будет происходить событие. Например вы можете создать пустой объект повесить на него коллайдер и включить свойство <b>Is Trigger</b>. Когда игрок будет заходить на этот пустой объект будет срабатывать какое нибудь событие которое вы напишите в этих методах <b>OnTriggerEnter</b>, <b>OnTriggerStay</b>, <b>OnTriggerExit</b>. Например можете написать появление врагов или переход на следующий уровень(сцену)</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

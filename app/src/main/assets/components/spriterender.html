@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Sprite Render</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Sprite Renderer</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/components/spriterenderer/spriterenderer.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Компонент <b>Sprite Renderer</b> отображает добавленный в него спрайт.
+                   Когда вы создаете спрайт <b>(GameObject -> 2D Object -> Sprite)</b>, Unity автоматически создает <b>GameObject</b> с присоединенным компонентом <b>Sprite Renderer</b>. Вы также можете добавить его в окне инспектора с помошью кнопки <b>Add Component</b>.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Свойства</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Sprite</b> - свойство для выбора спрайта из загруженных в папку <b>Assets</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Color</b> - свойство выбора цвета для спрайта. </div>
+                <div class="dividergrey"></div>
+                <div><b>Flip</b> - переварачивает спрайт по осям <b>X</b> и <b>Y</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Material</b> - выберите материал, используемый для визуализации текстуры спрайта.</div>
+                <div class="dividergrey"></div>
+                <div><b>Draw Mode</b> - выберите, как будет масштабироваться спрайт при изменении его размеров. Выберите один из следующих параметров в раскрывающемся списке. 
+                    
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item"><b>Simple</b> - всё изображение масштабируется при изменении его размеров. Это опция по умолчанию.</li>
+                        <li class="list-group-item"><b> Sliced</b> - этот режим позволяет мастштабировать область спрайта, которую вы выставляете в <b>Sprite Edtor</b> в окне редактирования спрайтов</li>
+                        <li class="list-group-item"> <b>Tiled</b> - при масштабирование спрайт не раcтягивается,а дублируется.</li> 
+                      </ul>
+                    </div>
+                <div class="dividergrey"></div>
+                    <div><b>Sorting Layer</b> - устанавливает сортировочный слой спрайта, который контролирует его приоритет во время рендеринга.
+                        Выберите существующий слой сортировки из раскрывающегося списка или создайте новый слой сортировки.</div>
+                <div class="dividergrey"></div>
+                        <div><b>Order In Layer</b> - установите приоритет рендеринга спрайта в его сортировочном слое. Спрайты с у которых значение будет выше будут находиться впереди, а у которых меньше сзади. Например у нас два объкта с <b>Sprite Render</b> sprite 1 и sprite 2. Если мы поставим значение sprite 1 равное 0, а sprite 2 равное -1, то sprite 1 будет перекрывать sprite 2, так как значение у его выше</div>
+                <div class="dividergrey"></div>
+                <div><b>Mask Interaction</b> - установите, как будет вести себя <b>Sprite Renderer</b> при взаимодействии с <b>Sprite Mask</b>.
+                            
+                            <ul class="list-group">
+                                <li class="list-group-item"> <b> None</b> - <b>Sprite Renderer</b> не взаимодействует с какими-либо масками спрайтов в сцене. Это опция по умолчанию. </li>
+                                <li class="list-group-item"> <b> Visible Inside Mask</b> - cпрайт виден там, где <b>Sprite Mask</b> перекрывает его, но не снаружи.</li>
+                                <li class="list-group-item"><b>Visible Outside Mask</b> - cпрайт виден снаружи <b>Sprite Mask</b>, но не внутри нее. <b>Sprite Mask</b> скрывает часть спрайта, которая она перекрывает.</li> 
+                                <li class="list-group-item"></li> 
+                              </ul>
+                        </div>
+                <div class="dividergrey"></div>
+                        <div><b>Sprite Sort Point</b> - выбирайте между центром спрайта(Center) или его точкой Опоры(Pivot) при расчете расстояния между спрайтом и камерой.</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

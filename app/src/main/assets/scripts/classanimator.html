@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Класс Animator</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classanimator/animator.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Класс <b>Animator</b> позволяет обращаться к свойствам и методам компонента <b>Animator</b>. Мы можете присвоить полю <b>animator</b> ссылку на компонент <b>Animator</b> с помощью метода GetComponent вызвав его в методе Start или Awake(предварительно естественно добавьте компонент <b>Animator</b> на объект). Есть так же второй способ присвоение ссылки на компонент это создать поле в скрипте и в окне инспектора перенести компонент на это поле.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>С помощью класса Animator вы можете задавать значения для параметров которые создавали в окне аниматора. Например для параметра типа float метод SetFloat(Название параметра в окне аниматора, значение), для int метод SetInteger(Название параметра в окне аниматора, значение), для bool метод SetBool(Название параметра в окне аниматора, значение(true или false) и для Trigger метод SetTrigger(Название параметра в окне аниматора)</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Методы</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>animator.SetFloat(Название параметра в окне аниматора, значение)</b> - устанавилвает значение для параметра типа <b>float</b> который вы создавали в окне аниматора. Рассмотрим пример. Создадим переход между анимацией <b>Idle</b> и <b>Walk</b>. Для этого создадим параметр <b>Speed</b> в окне анимации и установим значение 0.1. Далее создадим переход с <b>Idle</b> к <b>Walk</b> и зададим условие чтобы значение было больше 0.1(для этого нажмите на переход с <b>Idle</b> на <b>Walk</b> и в окне инспектора поставьте условие <b>Speed | Greater | 0.1</b>). А при переходе из анимации <b>Walk</b> в <b>Idle</b> установим условие что Speed должна быть меньше 0.1(для этого нажмите на переход с <b>Walk</b> на <b>Idle</b> и в окне инспектора поставьте условие <b>Speed | Less | 0.1</b>). Напишем в скрипте код что при нажатии кнопки в методе SetFloat установим значение 1 и будет выполнен переход на анимацию <b>Walk</b>, а при отпускании клавишу установим значение 0 для перехода обратно в состояние <b>Idle</b>. Метод GetKey у класса Input будет вызываться когда вы держите клавишу, а метод GetKeyUp когда вы отпустите клавишу</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classanimator/anim.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Код примера</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classanimator/float.png" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>animator.SetInteger(Название параметра в окне аниматора, значение)</b> - устанавливает значение для параметра типа <b>int</b>. Так же как из примера с <b>SetFloat</b> вы можете устанавливать значение для перехода только целыми числами. И кроме условий Greater(Больше) и Less(Меньше) есть еще два условия Equal(Равен) и NotEqual(Неравен). Например вы можете создать параметр Health(здоровье) и установить начальное значение 100. Далее например создать переход с Any State(Любое состояние) на <b>Destroy</b> и назначить условие перехода когда параметр Health будет равен 0(Health | Equal | 0)</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>animator.SetBool(Название параметра в окне аниматора, значение(true или false))</b> - устанавливает значение для параметра типа <b>bool</b>. Давайте на примере рассмотрим <b>SetBool</b>.Создадим параметр <b>IsGround</b> типа <b>boo;</b> и сделаем переход с <b>Idle</b> в <b>Jump</b>. По умолчанию выставим значение true и сделаем что переход будет при условии что <b>IsGround</b> будет <b>false</b>, а если true то обратно переход с <b>Jump</b> в <b>Idle</b>. Напишем код что принажатии клавиши space параметр SetBool будет false, а при отпускании true.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classanimator/anim2.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Код примера</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classanimator/int.png" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>animator.SetTrigger(Название параметра в окне аниматора)</b> - с помощью этого метода вы просто можете вызвать параметр <b>Trigger</b> для перехода а другую анимацию. Рассмотрим пример. Допустим у нашего персонажа при нажатии на клавишу проигрывается анимация <b>Attack</b> после того как она проигралась происходит сразу же переход в анимацию <b>Idle</b> без каких либо условий. Поэтому мы можем создать параметр <b>Attack</b> и при нажатии клавиши сделать переход с анимации <b>Idle</b> в анимацию <b>Attack</b> вызвав метод SetTrigger("Attack")</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classanimator/anim3.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Код примера</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classanimator/trigger.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

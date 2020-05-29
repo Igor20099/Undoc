@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Сцены</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Сцены</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scenes/scenes.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Сцены содержат объекты вашей игры. Они могут использоваться для создания главного меню, отдельных уровней и для других целей. В каждой сцене можно разместить объекты окружения, заграждения, декорации, тем самым создавая дизайн и саму игру. Все сцены сохраняйте в папке <b>Scenes</b> в окне проекта. Переключиться на сохраненную сцену так же можно в окне проекта в папке <b>Scenes</b> нажав 2 раза на файл сцены.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для создания сцены нужно зайти в меню <b>File</b> и нажать на <b>New Scene</b>. Незабудьте сохранить текущую сцену в меню <b>File</b> и нажав на <b>Save</b> или сочетанием клавиш <b>Ctrl + S</b> в папку <b>Scenes</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scenes/scenes.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для того чтобы переключаться между сценами во время игры их надо добавить в окно <b>Scenes In Build </b> в <b>Build Settings...</b>. Для этого зайдите в меню <b>File</b> и выберите <b>Build Settings...</b>. В окно <b>Scenes In Build</b> перетащите сцены. Нумерация сцен начинаеться с нуля. </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scenes/scenesbuild.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Далее нам нужно создать скрипт для перехода на следующую сцену. Для примера назначим этот скрипт на нажатие кнопки на сцене <b>Main Menu</b>. Для перехода между сценами используеться класс <b>SceneManager</b>. Нужно вызвать метод <b>SceneManager.LoadScene(Номер сцены, отображается в окне Scenes In Build)</b>. В нашем случае для перехода на сцену<b> Level 1</b> создадим метод <b>GoToNextScene</b> и напишем <b>SceneManager.LoadScene(1)</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scenes/scenescript.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scenes/scenessc.gif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

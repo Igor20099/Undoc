@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Окно аниматора</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Окно аниматора</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animator/animator.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>В окне <b>Animator</b> мы управляем переходами между анимациями. При создание первой анимации у объекта создается компонент <b>Animator</b> и сам <b>Animator Controller</b> у объекта, но вы можете сами добавить компонент <b>Animator</b> и в окне проекта <b>Animator Controller</b>. Незабудьте перетащить <b>Animator Controller</b> в поле <b>Controller</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animator/animatorcomp.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для того чтобы открыть окно <b>Animator</b>. Зайдите в меню <b>Window -> Animation</b> и выберите <b> Animator</b>. Выберите объект в окне иерархии чтобы переключиться на его <b>Animator Controller</b>.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animator/animatorw.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>При запуске игры будет проигрываться анимация по умолчанию. Вы сами можете устанавливать анимацию по умолчанию для этого нажмите на блок с анимацией правой кнопкой мыши и выберите <b>Set as Layer Default State</b>.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animator/animatoranim2.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для того что бы создавать переходы между анимациями нажмите правой кнопкой мыши на блок с анимацией и выберите <b>Make Transition</b>. Появится стрелка наведите её на нужный блок и нажмите левой кнопкой мыши.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animator/animatoranim3.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Если вы создадите односторонний переход с одной анимации на другую то последняя анимация будет проигрываться постоянна так как на ней нет перехода на другую анимацию. </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animator/animatoranim4.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Что бы такого не произошло нужно создать переход обратно.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animator/animatoranim5.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Если у вас есть анимация в переход которой можно выполнить с любой анимации вы можете использовать блок <b>Any State(Любое состояние)</b>. Например с состояния <b>Idle</b> и <b>Move</b>(и с любого другого состояния) можно перейти в сосотояние <b>Jump</b> просто направив стрелку перехода с <b>Any State</b> на <b>Jump</b>.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animator/animatoranim6.gif" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Настройки перехода между анимациями</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Если вы не зададите условия перехода между анимациями, то они будут автоматически между собой переходить. Для перехода между анимация существуют 4 типа параметров.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animator/animatorcon.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>float</b> - числа с плавающей точкой.</div>
+                <div class="dividergrey"></div>
+                <div><b>int</b> - целые числа.</div>
+                <div class="dividergrey"></div>
+                <div><b>bool</b> - логическое значение "true" или "false".</div>
+                <div class="dividergrey"></div>
+                <div><b>Trigger</b> - при выполнения действия активируется <b>trigger</b> и осуществляется переход на другую анимацию.</div>
+                <div class="dividergrey"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для того чтобы создать параметр перейдите во вкладку <b>Parameters</b> в левом верхнем углу окна <b>Animator</b>. Нажмите на <b>+</b> и выберите тип переменной. Назовите вашу переменную и присвойте значение.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animator/animatoranim7.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Чтобы назначить условие нажмите на стрелку перехода и в <b>Conditions</b> нажмите на <b>+</b> появится наша созданная переменная. Так как я создал переменную типа <b>float</b> то тут будет условие перехода <b>Greater(Больше)</b> или <b>Less(Меньше)</b> и дальше можно написать значение. Например при создании переменной <b>float</b> мы присвоили ей значение <b>3.1</b>, то мы можем написать что если это значение <b>больше(Greater) 2.8</b>, то будет осуществлятся переход на другую анимацию.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/interface/animator/animatoranim8.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Теперь при запуске игры <b>Idle</b> не будет переходить в <b>Move</b> пока не выполнится условие. Для перехода в другую анимацию в коде нужно написать логику перехода(смотрите про класс <b>Animator</b> в разделе <b>Скрипты в Unity</b> ).</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для удаления перехода нажмите на стрелку перехода, а затем клавишу <b>Delete</b>.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

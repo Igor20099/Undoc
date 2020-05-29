@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Input Field</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Input Field</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/inputfield/inputfield.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Input Field</b> - поле для ввода текста. Имеет два дочерних объекта <b>Placeholder(Text)</b> подсказка для ввода текста и сам <b>Text(Text)</b>.</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Компонент Input Field</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/inputfield/textfield.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Interactable</b> - это свойство означает будет ли <b>Input Field</b> активен или нет</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Transition(переходы между состояниями Input Field)</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>None</b> - без перехода</div>
+                <div class="dividergrey"></div>
+                <div><b>Color Tint</b> - изменения цвета при переключение на другое состояние. Выбран по умолчанию</div>
+                <div class="dividergrey"></div>
+                <div><b>Sprite Swap</b> - изменения спрайта <b>Input Field</b> при переходе на другое состояние</div>
+                <div class="dividergrey"></div>
+                <div><b>Animation</b> - анимация <b>Input Field</b> перехода в другое состояние</div>
+                <div class="dividergrey"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Теперь сами состоянии <b>Input Field</b>:</div>
+                <div><b>Normal</b> - стартовое состояние</div>
+                <div class="dividergrey"></div>
+                <div><b>Hightlighted</b> - когда курсор мышки над <b>Input Field</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Pressed</b> - когда вы нажали кнопкой мыши на <b>Input Field</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Selected</b> - когда <b>Input Field</b> выделен. Если вы нажмите на другой UI объект то <b>Input Field</b> перейдет в состояние <b>Normal</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Disabled</b> - когда <b>Input Field</b> не активен (отключено свойство <b>Interactable</b>)</div>        
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Text Component</b> - свойство в которое мы переносим <b>UI</b> объект <b>Text</b> который отображает вводимый текст</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Text</b> - в этом поле можно ввести текст который будет выводиться по умолчанию при запуске</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Character Limit</b> - ограничение на количество вводимых символов</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Content Type</b> - тип вводимого контента.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/inputfield/contenttype.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <b>Standard</b> - позволяет вводить все символы <br>
+                    <div class="dividergrey"></div>
+                    <b>Autocorrected</b> - разрешает ввод всех данных и выполняет автокорректирование <br>
+                    <div class="dividergrey"></div>
+                    <b>IntegerNumber</b> - разрешает вводить целые числа (положительные или отрицательные). <br>
+                    <div class="dividergrey"></div>
+                    <b>DecimalNumber</b> - позволяет вводить десятичные числа (положительные или отрицательные). <br>
+                    <div class="dividergrey"></div>
+                    <b>Alphanumeric</b> - Позволяет вводить буквы A-Z, a-z и цифры 0-9. <br>
+                    <div class="dividergrey"></div>
+                    <b>Name</b> - используется для ввода имени и обеспечивает использование заглавных букв первой буквы каждого слова. Обратите внимание, что пользователь может обойти правила ввода заглавных букв, удалив автоматически заглавные буквы. <br>
+                    <div class="dividergrey"></div>
+                    <b>EmailAddress</b> - используется для ввода адреса электронной почты. <br>
+                    <div class="dividergrey"></div>
+                    <b>Password</b> - разрешает все вводимые данные и скрывает набранные символы, показывая их в виде символов звездочек. <br>
+                    <div class="dividergrey"></div>
+                    <b>Pin</b> - разрешает целые числа и скрывает напечатанные символы, показывая их как символы звездочек. <br>
+                    <div class="dividergrey"></div>
+                    <b>Custom</b>	позволяет по своему настроит ввод текста.</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Line Type</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div> <b>SingleLine</b>- позволяет вводить только 1 строку. Имеет горизонтальную прокрутку и без переноса слов. <br>
+                    <div class="dividergrey"></div>
+                    <b>MultiLineSubmit</b> - позволяет вводить многострочный текст с вертикальной прокруткой и переполнением. <br>
+                    <div class="dividergrey"></div>
+                    <b>MultiLineNewline</b>	- позволяет вводить многострочный текст с вертикальной прокруткой и переполнением. При нажатии на клавишу <b>Enter</b> переходит на новую строку</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Placeholder</b> - поле в котором находится дочерний объект <b>Placeholder(Text)</b></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Событие On Value Changed(String)</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/inputfield/inputfieldonvalue.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Событие происходит всегда при изменения текста в <b>Input Field</b></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Событие On Edit End(String)</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/inputfield/inputfieldonvalue.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Событие происходит когда вы закончили вводить текст и нажали клавишу <b>Enter</b></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Scrollbar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Scrollbar</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/scrollbar/scrollbar.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Scrollbar</b> - <b>UI</b> объект который используется для прокрутки контента, которое полностью не влезает в область отображения. По умолчанию состоит из компонентов: <b>Rect Transform</b>, <b>Canvas Render</b>, <b>Image</b>, <b>Scrollbar</b>. <b>Sliding Area(Пустой GameObject)</b> ялвяется дочерним объектом, а <b>Handle(Image)</b>(полоса прокрутки) является дочерним объектом <b>Sliding Area</b>. <br> Давайте сначала на примере рассмотрим как работает <b>Scrollbar</b>. Для этого создадим <b>UI</b> объект <b>Panel</b>. Далее дочерним объектом создадим пустой <b>GameObject</b> назовем его <b>Content</b>, а в нем создадим пустой GameObject <b>Images</b> в котором будут находиться изображения. Так же добавим <b>Scrollbar</b> в <b>Content</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/scrollbar/scrollbar2.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Добавим компонент <b>Horizontal Layout Group </b> на <b>Images</b> чтобы выровнить все изображения по горизонтали и в компоненте <b>Horizontal Layout Group</b> добавим в свойство <b>Spacing</b> значение 10</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/scrollbar/scrollbarh.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Далее cделаем так чтобы изображения выходили за <b>Panel</b> для прокрутки</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/scrollbar/scrollbar4.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Далее на <b>Content</b> добавляем компонент <b>Scroll Rect</b>. В компонент <b>Scroll Rect</b> в поле <b>Content</b> присваиваем <b>Images</b> это контент который нужно прокручивать в нашем случае изображения и в поле <b>Horizontal Scrollbar</b> присваиваем <b>Scrollbar</b> для того чтобы <b>Scrollbar</b> прокручивал изображения по горизонтали если вам нужно по вертикали то присвойте <b>Scrollbar</b> полю <b>Vertical Scrollbar</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/scrollbar/scrollbar5.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для того чтобы скрыть изображения которые выходят за пределы <b>Panel</b> добавим на <b>Panel</b> компонент <b>Mask</b>. Проверяем прокрутку <b>Scrollbar</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/scrollbar/scrollbar6.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Компонент Scrollbar</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/scrollbar/scrollbarcomp.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Interactable</b> - это свойство означает будет ли <b>Scrollbar</b> активен или нет</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Transition(переходы между состояниями Scrollbar)</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>None</b> - без перехода</div>
+                <div class="dividergrey"></div>
+                <div><b>Color Tint</b> - изменения цвета при переключение на другое состояние. Выбран по умолчанию</div>
+                <div class="dividergrey"></div>
+                <div><b>Sprite Swap</b> - изменения спрайта <b>Scrollbat</b> при переходе на другое состояние</div>
+                <div class="dividergrey"></div>
+                <div><b>Animation</b> - анимация <b>Scrollbar</b> перехода в другое состояние</div>
+                <div class="dividergrey"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Теперь сами состоянии Scrollbar:</div>
+                <div><b>Normal</b> - стартовое состояние</div>
+                <div class="dividergrey"></div>
+                <div><b>Hightlighted</b> - когда курсор мышки над <b>Scrollbar</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Pressed</b> - когда <b>Handle</b>  у <b>Scrollbar</b> нажат</div>
+                <div class="dividergrey"></div>
+                <div><b>Selected</b> - когда выбран Handle у <b>Scrollbar</b>. Если вы нажмите на другой <b>UI</b> объект то <b>Handle</b> у <b>Scrollbar</b> перейдет в состояние <b>Normal</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Disabled</b> - когда <b>Handle</b>  у <b>Scrollbar</b> не активен (отключено свойство <b>Interactable</b>)</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Рассмотрим другие свойства компонента <b>Scrollbar</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Handle Rect</b> - в этом свойстве находится дочерний <b>UI</b> объект <b>Handle(ползунок для прокрутки)</b> </div>
+                <div class="dividergrey"></div>
+                <div><b>Direction</b> - направление прокрутки.
+                    <ul class="list-group">
+                        <li class="list-group-item"><b>LeftToRight </b> - слева на право</li>
+                        <li class="list-group-item"><b>RightToLeft</b> - справо на лево</li>
+                        <li class="list-group-item"><b>TopToBottom</b> - сверху вниз</li>
+                        <li class="list-group-item"><b>BottomToLeft</b> - снизу в верх</li>
+
+                    </ul>
+
+                   </div>
+                <div class="dividergrey"></div>
+                <div><b>value</b> - позиция ползунка</b> </div>
+                <div class="dividergrey"></div>
+                <div><b>Size</b> - размер ползунка</b> </div>
+                <div class="dividergrey"></div>
+                <div><b>Number Of Steps</b> - количество шагов прокрутки ползунка</b> </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Событие On Value Changed</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Событие происходит при прокрутки <b>Scrollbar</b></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

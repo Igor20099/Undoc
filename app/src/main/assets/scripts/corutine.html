@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Корутины</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/corutine/corutine.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Корутина - это функция которую вы можете запускать параллельно c помощью метода <b>StartCoroutine(Название метода со скобками)</b> и остановить c помощью метода <b>StopCoroutine(Название метода со скобками)</b>. Возвращает интерфейс <b>IEnumerator</b>. Смысл в том что с помощью оператора <b>yield return</b> вы можете делать задержку выполнения кода в корутине. Например создадим корутину которая остановит объект через 2 секунды. Пишем метод <b>IEnumerator StopObject()</b> и в нем с помощью <b>yield return new WaitForSeconds(2f)</b> делаем задержку и присваем переменной <b>speed</b> значение 0. Тем самым через 2 секунды после старта значение скорости будет равно 0. Запускать корутину будем в методе <b>Start</b>. Для этого вызовем метод <b>StartCoroutine(Название метода со скобками)</b> в нашем случае <b>StartCoroutine(StopObject())</b>.Код примера</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/corutine/corutine.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/corutine/corutine.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mb-1">Рассмотрим виды конструкций <b>yield return</b>:</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>yield return new WaitForSeconds(значение в float)</b> - пауза в секундах</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>yield return new WaitForEndOfFrame()</b> - пауза до конца кадра</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>yield return new WaitForFixedUpdate()</b> - пауза до вызова метода FixedUpdate</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>yield return null</b> - пропускает текущий кадр</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>yield break</b> - прерывает корутину</div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Вы также можете написать написать несколько конструкций <b>yield return</b>. Например добавим к нашему коду после строчки <b>speed</b> = 0 паузу на 2 секунды с помощью <b>yield return new WaitForSeconds(2f)</b> и переменной <b>speed</b> присвоем значение -2 для того что бы объект после остановки начал перемещаться влево</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/corutine/corutine2.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/corutine/corutine2.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Так же есть метод который останавливает все запущенные корутины <b>StopAllCoroutines()</b></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

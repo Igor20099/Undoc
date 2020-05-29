@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Методы instantiate и Destroy</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Метод Instantiate</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/instantiate/instantiate.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Метод <b>Instantiate</b> позволяет создать экземпляр объекта(префаба) на сцене. Этот метод имеет много перегрузок. Вы може просто создать объект(Instantiate(Object object)), а можете указать позицию где будет создан объект(Instantiate(Object object, Transform position)). Возвращает тип данных <b>Object</b></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Метод Destroy</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/instantiate/destroy.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Метод <b>Destroy</b> позволяет уничтожить экземпляр объекта(префаба) на сцене. Этот метод имеет 2 перегрузки. Моментально уничтожить объект (Destroy(Object object)) и уничтожить объект через время которое задаётся вторым параметром типа <b>float</b> (Destroy(Object object, float time)). Бывает такие случаи что лучше перед обращением к полю проверить его на наличие ссылки на объект чтобы не получить ошибку <b>NullReferenceException</b>это делается проверкой <b>if ((название поля) != null){//код}</b></div>
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Рассмотрим на примере методы <b>Instantiate</b> и <b>Destroy</b>. Создадим префаб <b>Cube</b> и пустой <b>GameObject</b> и назовем его <b>Spawn Point(в позиции этого объекта появится Cube)</b>. Сбросьте координаты по осям префаба <b>Cube</b> в ноль или просто нажмите у компонента <b>Transform</b> на шестеренку(в последней версии три точки) и выберите <b>Reset</b> чтобы он появлялся ровно в позиции Spawn Point. Так же настройте позицию <b>Spawn Point</b> чтобы она попадала в игровую камеру. Удалим префаб со сцены так как мы будем его добавлять с окна проекта. Далее создадим скрипт(я для примера назову его <b>Game</b>) и добавим на <b>Main Camera</b>. Напишем в нем поле для нашего префаба <b>Cube</b> и поле типа <b>Transform</b> куда переместим пустой GameObject <b>Spawn Point</b>. Назовем это поле <b>spawnPointPosition</b>.В первое поле перетащим наш префаб с окна проекта, а во второе поле перетащим <b>Spawn Point</b>с окна иерархии. В методе <b>Start</b> объявим переменную типа GameObject <b>cubeInstance</b> и присвоем ей вызов метода <b>Instantiate(cube,spawnPointPosition)</b>(так как метод <b>Instantiate</b> возращает <b>Object</b>, а <b>GameObject</b> наследуется от <b>Object</b>) и так же в методе <b>Start</b> с помощью метода <b>Destroy(cubeInstance, 3f)</b> уничтожим наш созданный объект через 3 секунды после появления на сцене.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/instantiate/instantiate.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Код примера:</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/instantiate/instex.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

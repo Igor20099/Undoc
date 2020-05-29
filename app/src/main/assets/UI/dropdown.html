@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Dropdown</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Dropdown</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/dropdown/dropdown.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Dropdown</b> -  выпадающий список, который представляет список параметров при нажатии, из которых можно выбрать один. По умолчанию состоит из компонентов: <b>Rect Transform</b>, <b>Canvas Render</b>, <b>Image</b>, <b>Dropdown</b>. Дочерние объекты <b>Label(Text)</b>, <b>Arrow(Image)</b> и скрытый <b>Templatе(GameObject)</b></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Компонент Dropdown</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/dropdown/dropdown.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Interactable</b> - это свойство означает будет ли <b>Slider</b> активен или нет</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Transition(переходы между состояниями <b>Dropdown</b></h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>None</b> - без перехода</div>
+                <div class="dividergrey"></div>
+                <div><b>Color Tint</b> - изменения цвета при переключение на другое состояние. Выбран по умолчанию</div>
+                <div class="dividergrey"></div>
+                <div><b>Sprite Swap</b> - изменения спрайта <b>Dropdown</b> при переходе на другое состояние</div>
+                <div class="dividergrey"></div>
+                <div><b>Animation</b> - анимация <b>Dropdown</b> перехода в другое состояние</div>
+                <div class="dividergrey"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Теперь сами состоянии <b>Dropdown</b>:</div>
+                <div><b>Normal</b> - стартовое состояние</div>
+                <div class="dividergrey"></div>
+                <div><b>Hightlighted</b> - когда курсор мышки над <b>Dropdown</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Pressed</b> - когда вы нажали кнопкой мышки на <b>Dropdown</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Selected</b> - когда <b>Dropdown</b> выделен после нажатия. Если вы нажмите на другой <b>UI</b> объект то <b>Dropdown</b> перейдет в состояние <b>Normal</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Disabled</b> - когда <b>Dropdown</b> не активен (отключено свойство <b>Interactable</b>)</div>
+                <div class="dividergrey"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Рассмотрим другие свойства компонента <b>Dropdown</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Template</b> - в этом поле находится дочерний скрытый объект <b>Template</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Caption Text</b> - в этом поле находится дочерний UI объект <b>Label(Text)</b>. При выборе пункта из выпадающего текста в <b>Label(Text)</b> присваивается выбранный из списка текст</div>
+                <div class="dividergrey"></div>
+                <div><b>Caption Image</b> - в это поле можно рядом с текстом поместить изображение. Для этого нужно создать дочерний <b>UI</b> объект <b>Image</b> и поместить его в это поле</div>
+                <div class="dividergrey"></div>
+                <div><b>Value</b> - в это поле вы можете выставить значение элемнета который будет выводиться при старте. Например если вы поставите значение 1 то будет выводиться второй элемент из списка так как нумерация с 0.</div>
+                <div class="dividergrey"></div>
+                <div><b>Options</b> - вы можете добавлять новые элементы списка(<b>Text</b> и <b>Image</b>) нажав на <b>+</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/dropdown/dropdown2.gif" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Для того чтобы добавить изображение рядом с текстом создадим дочерний <b>UI</b> объект <b>Image</b>. Далее присвоем его полю <b>Caption Image</b> компонента <b>Dropdown</b> и выберем изображение для каждого элемента списка</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/dropdown/dropdown3.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Событие On Value Changed(Int32)</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/dropdown/dropdown4.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Событие которое происходит при выборе элемента из списка</div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Камера</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Камера</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/camera.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Камера отображает игровой мир попадающий в поле видимости камеры. На сцене может быть неограниченное количество камер. При создании сцены по умолчанию создается <b>Main Camera</b>. Что бы добавить камеру нажмите правой кнопкой на окно иерархии и выберите <b>Camera</b>.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/camera1.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Камера состоит по умолчанию из трех компонентов: <b>Transform</b>, <b>Camera</b> и <b>AudioListener</b>. Так же есть небольшое окно <b>Camera Preview</b> которое показывает то что отображает камера</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/camerapreview.png" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Компонент Camera</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/cameracomp.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Clear Flags</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Skybox</b> - камера будет оображать фон неба.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/camerasky.png" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Solid Color</b> - камера будет отображать вокруг цвет который вы выбирите в поле <b>Background</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/camerasolid.png" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Projection</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Perspective</b> - перспективу можно описать так, что чем объект ближе к камере тем больше, а чем дальше меньше. Например как в шутерах. С помощью слайдера <b>Field of View</b> можно изменять угол обзора камеры в перспективе.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/camerapersp.gif" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Ortographic</b> - отображения объектов в двухмерной плоскости. Используется например в изометрических и 2D играх. Поле <b>Size</b> позволяет настроить размер отображения камеры.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/cameraorto.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Clipping Planes</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Near</b> - с помошью этого значения можно редактировать начальную область видимости камеры.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/cameranear.gif" alt="">
+            </div>
+        </div>
+        <div class="dividergrey"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Far</b> - с помошью этого значения можно редактировать конечную область видимости камеры.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/camerafar.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Target Display</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Вы можете на каждую камеру выбрать номер дисплея отображения и менять их в окне <b>Game</b>. Например создайте вторую камеру и в поле <b>Target Display</b> выберите <b>Display 2</b>.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/camerat.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Теперь перейдите в окно <b>Game</b> и выберите <b>Display 2</b> и будет отображаться все что видит вторая камера</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/cameradis.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Что бы вернуть начальные настройки компонента <b>Camera</b>(и вообще любого компонента). У компонента в правом верхнем углу нажмите на шестеренку(в последней версии <b>Unity</b> три точки) и выберите <b>Reset</b>.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/camera/camerares.gif" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

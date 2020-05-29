@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Image</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Image</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/image/image.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Image</b> - UI объект который отображает изображение. По умолчанию использует три компонента: <b>Rect Transform</b>, <b>Canvas Render</b> и <b>Image</b></div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Компонент Image</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/ui/panel/panelimage.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Source Image</b> - в этом свойстве вы моежете изменить изображение</div>
+                <div class="dividergrey"></div>
+                <div><b>Color</b> - это свойство позоляет выбрать цвет для изображения</div>
+                <div class="dividergrey"></div>
+                <div><b>Material</b> - это свойство позволяет в качестве изображения ставить <b>Material</b></div>
+                <div class="dividergrey"></div>
+                <div><b>Fill Center</b> - если это свойство включено то изображение заливается полностью выбранным цветом, если выключено то остается только обводка</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="h4 text-center">Image Type</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Simple</b> - масштабирует весь спрайт равноценно.</div>
+                <div class="dividergrey"></div>
+                <div><b>Sliced</b> -  использует разделение спрайта на 3x3 так, чтобы масштабирование не искажало углы, а растянута была только центральная часть.</div>
+                <div class="dividergrey"></div>
+                <div><b>Tiled</b> -  похоже на Sliced, но вместо растягивания центральной части, она повторяется (заполняется тайлами). Для спрайтов без каких-либо границ, весь спрайт будет заполнен тайлами.</div>
+                <div class="dividergrey"></div>
+                <div><b>Filled</b> - отображает спрайт так же, как это делает <b>Simple</b>, за исключением того, что он заполняет спрайт, начиная с определенной точки в установленном направлении и количестве заданным методом.</div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center"> Raw Image</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>Raw Image</b> - отличается от <b>Image</b> только тем что <b>Image</b> отображает спрайт, а <b>Raw Image</b> текстуру(без границ). Вместо компонента <b>Image</b> используется компонент <b>Raw Image</b></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

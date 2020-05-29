@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="file:///android_asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="file:///android_asset/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="h2 text-center">Класс Rigidbody</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classrigidbody/rigidbody.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Класс <b>Rigidbody</b> позволяет обращаться к свойствам и методам компонента <b>Rigidbody</b>. Мы можете присвоить полю <b>rigidbody</b> ссылку на компонент <b>Rigidbody</b> с помощью метода GetComponent вызвав его в методе Start или Awake(предварительно естественно добавьте компонент <b>Rigidbody</b> на объект). Есть так же второй способ присвоение ссылки на компонент это создать поле в скрипте и в окне инспектора перенести компонент на это поле.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classrigidbody/rigidbody.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Свойства</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>rigidbody.velocity</b> - вектор скорости. Принимает в качестве значения <b>Vector3</b></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classrigidbody/velocity.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Если мы умножим вектор на ноль то как будто снизим силу гравитации объекту</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classrigidbody/velocity.gif" alt="">
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="h3 text-center">Методы</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div><b>rigidbody.AddForce(Vector3 vector3, ForceMode mode)</b> - добавляет воздействие силы на объект. С помощью этого метода вы можете реализовать прыжок у игровго объекта. Рассмотрим ForceMode типа силы который будет использоваться на игровой объект.
+                
+                    <ul class="list-group">
+                        <li class="list-group-item"> <b>ForceMode.Force</b> - неприрывная сила к объекту. Используется его масса</li>
+                        <li class="list-group-item"> <b>ForceMode.Acceleration</b> - постоянное ускорение объекта. Этот тип игнорирует массу объекта.</li>
+                        <li class="list-group-item"> <b>ForceMode.Impulse</b> - мгновенный импульс силы к объекту. Используется его масса</li>
+                        <li class="list-group-item"> <b>ForceMode.VelocityChange</b> - мгновенное изменение скорости к объекту.Этот тип игнорирует массу объекта.</li>
+                        
+                      </ul>
+                
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>Рассмотрим пример реализации прыжка у игрового объекта с помощью <b>AddForce</b>. Напишем код где в методе <b>Update</b> где при нажатии на клавишу пробел(space) куб будет подпрыгивать.Для нажатию на клавишу используется метод <b>GetKeyDown</b> класса <b>Input</b> и в нем напишем <b>KeyCode.space</b>. Далее напишем метод прыжка.Vector3.up означает переещение на 1 по оси <b>Y</b>.Так же умножим на <b>force</b> которую будем задавать в окне инспектора Тип силы выберем <b>ForceMode.Impulse</b>.</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classrigidbody/rigidbody.png" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="w-100"src="file:///android_asset/img/scripts/classrigidbody/force.gif" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-success">Код работы с физикой лучше писать в FixedUpdate. Почему же тогда в примере мы писали код в Update? Дело в том что Update в отличии от FixedUpdate. Обновляется 60 кадров в секунду, а FixedUpdate 50 кадров в секунду по этому метод нажатии на клавишу не всегда будет срабатывать в методе FixedUpdate из за того что он реже вызывается чем Update</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
