@@ -1,4 +1,4 @@
-package com.joymaker.unity;
+package com.joymaker.unity.interfaceunity;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+
+import com.joymaker.unity.R;
 
 public class DetailInterfaceUnityActivity extends AppCompatActivity {
     private WebView detailInterfaceWebView;
@@ -73,7 +75,7 @@ public class DetailInterfaceUnityActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-               Intent intent = new Intent(this,InterfaceUnityActivity.class);
+               Intent intent = new Intent(this, InterfaceUnityActivity.class);
                startActivity(intent);
                 return true;
             default:

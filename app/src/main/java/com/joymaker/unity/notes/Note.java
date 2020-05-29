@@ -1,4 +1,4 @@
-package com.joymaker.unity;
+package com.joymaker.unity.notes;
 
 public class Note {
     private String title;

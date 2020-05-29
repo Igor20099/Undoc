@@ -1,10 +1,11 @@
-package com.joymaker.unity;
+package com.joymaker.unity.notes;
 
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.joymaker.unity.R;
 
 import java.util.ArrayList;
 

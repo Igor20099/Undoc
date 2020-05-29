@@ -9,9 +9,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.joymaker.unity.MainFragment;
-import com.joymaker.unity.NotesFragment;
+import com.joymaker.unity.notes.NotesFragment;
 import com.joymaker.unity.R;
-import com.joymaker.unity.TestFragment;
+import com.joymaker.unity.questions.TestFragment;
 
 /**
  * A [FragmentPagerAdapter] that returns a fragment corresponding to

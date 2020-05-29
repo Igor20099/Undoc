@@ -1,9 +1,13 @@
-package com.joymaker.unity;
+package com.joymaker.unity.notes;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.joymaker.unity.R;
+import com.joymaker.unity.notes.Note;
+import com.joymaker.unity.notes.NotesAdapter;
 
 import java.util.ArrayList;
 

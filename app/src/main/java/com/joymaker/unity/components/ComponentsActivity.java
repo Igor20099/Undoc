@@ -1,17 +1,18 @@
-package com.joymaker.unity;
+package com.joymaker.unity.components;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView.Adapter;
 
 import android.content.Intent;
-import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.joymaker.unity.MainActivity;
+import com.joymaker.unity.R;
 
 public class ComponentsActivity extends AppCompatActivity {
         private ListView componentsListView;
@@ -82,7 +83,7 @@ public class ComponentsActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                Intent intent = new Intent(this,MainActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 return true;
             default:

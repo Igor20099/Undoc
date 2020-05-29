@@ -1,4 +1,4 @@
-package com.joymaker.unity;
+package com.joymaker.unity.scriptsunity;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.joymaker.unity.MainActivity;
+import com.joymaker.unity.R;
 
 public class ScriptsActivity extends AppCompatActivity {
     private ListView scriptsListView;
@@ -95,7 +98,7 @@ public class ScriptsActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
-                Intent intent = new Intent(this,MainActivity.class);
+                Intent intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 return true;
             default:

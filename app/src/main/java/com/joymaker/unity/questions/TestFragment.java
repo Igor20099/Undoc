@@ -1,4 +1,4 @@
-package com.joymaker.unity;
+package com.joymaker.unity.questions;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -8,8 +8,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.joymaker.unity.R;
+import com.joymaker.unity.questions.Questions;
+
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
 
 import androidx.annotation.NonNull;
