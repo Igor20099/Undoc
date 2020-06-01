@@ -26,7 +26,7 @@ public class ComponentsActivity extends AppCompatActivity {
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
         componentsListView = findViewById(R.id.componentsListView);
-        String[] components = {"Компонент","Transform", "Rect Transform","Коллайдеры", "Rigidbody", "Mesh Filter и Mesh Render","Sprite Render"};
+        String[] components = {"Компонент","Transform", "Rect Transform","Коллайдеры", "Rigidbody", "Mesh Filter и Mesh Render","Sprite Render","Joints(Соединения)"};
         ArrayAdapter<String> componentsAdapter = new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_list_item_1,components);
         componentsListView.setAdapter(componentsAdapter);
         componentsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {

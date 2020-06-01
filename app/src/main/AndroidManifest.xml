@@ -9,15 +9,35 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".scriptsunity.DetailScriptsActivity" android:screenOrientation="portrait"></activity>
-        <activity android:name=".scriptsunity.ScriptsActivity" android:screenOrientation="portrait" />
-        <activity android:name=".unityUI.DetailUiActivity" android:screenOrientation="portrait" />
-        <activity android:name=".unityUI.UiActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".components.DetailsComponentsActivity" android:screenOrientation="portrait" />
-        <activity android:name=".components.ComponentsActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".DetailActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".interfaceunity.DetailInterfaceUnityActivity" android:screenOrientation="portrait"/>
-        <activity android:name=".interfaceunity.InterfaceUnityActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".EditNote"></activity>
+        <activity android:name=".CreateNote" />
+        <activity
+            android:name=".scriptsunity.DetailScriptsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".scriptsunity.ScriptsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".unityUI.DetailUiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".unityUI.UiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".components.DetailsComponentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".components.ComponentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".interfaceunity.DetailInterfaceUnityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".interfaceunity.InterfaceUnityActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

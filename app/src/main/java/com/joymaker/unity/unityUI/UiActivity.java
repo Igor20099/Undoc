@@ -25,7 +25,7 @@ public class UiActivity extends AppCompatActivity {
         actionBar.setHomeButtonEnabled(true);
         actionBar.setDisplayHomeAsUpEnabled(true);
         uiListView = findViewById(R.id.uiListView);
-        String[] ui = {"Canvas","Event System","Panel","Text","Image и Raw Image","Button","Toggle","Slider","Dropdown","Input Field", "Scrollbar", "Scroll View"};
+        String[] ui = {"Canvas", "Panel","Text","Image и Raw Image","Button","Toggle","Slider","Dropdown","Input Field", "Scrollbar", "Scroll View"};
         ArrayAdapter<String> uiAdapter = new ArrayAdapter<>(getApplicationContext(),android.R.layout.simple_list_item_1,ui);
         uiListView.setAdapter(uiAdapter);
         uiListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -88,11 +88,11 @@ public class UiActivity extends AppCompatActivity {
                         intent.putExtra("ui",position);
                         startActivity(intent);
                         break;
-                    case 11:
-                        intent = new Intent (getApplicationContext(), DetailUiActivity.class);
-                        intent.putExtra("ui",position);
-                        startActivity(intent);
-                        break;
+//                    case 11:
+//                        intent = new Intent (getApplicationContext(), DetailUiActivity.class);
+//                        intent.putExtra("ui",position);
+//                        startActivity(intent);
+//                        break;
                 }
             }
         });

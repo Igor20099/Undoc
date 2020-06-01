@@ -13,5 +13,60 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingBottom="68dp"
+        android:clipToPadding="false"
+        />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/floatmenu"
+        app:fab_addButtonColorNormal="@color/colorUserNote"
+        app:fab_addButtonColorPressed="@color/colorUserNote"
+        app:fab_addButtonPlusIconColor="#ffffff"
+        app:fab_labelStyle="@style/menu_labels_style"
+        >
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorUserNote"
+            app:fab_colorPressed="@color/colorUserNote"
+            android:id="@+id/createNote"
+            android:src="@drawable/plus"
+            android:paddingBottom="16dp"
+            app:fab_title="Создать заметку"
+
+            >
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorUserNote"
+            app:fab_colorPressed="@color/colorUserNote"
+            android:src="@drawable/clipboard"
+            android:id="@+id/myNotes"
+            android:paddingBottom="16dp"
+            app:fab_title="Мои заметки"
+
+            >
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorPrimary"
+            app:fab_colorPressed="@color/colorPrimary"
+            android:src="@drawable/clipboard"
+            android:paddingBottom="16dp"
+
+            android:id="@+id/notes"
+            app:fab_title="Заметки"
+
+            >
+
+        </com.getbase.floatingactionbutton.FloatingActionButton>
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
 </androidx.constraintlayout.widget.ConstraintLayout>

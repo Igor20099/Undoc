@@ -31,47 +31,47 @@ public class DetailUiActivity extends AppCompatActivity {
                 uiWebView.loadUrl("file:///android_asset/UI/canvas.html");
                 setTitle("Canvas");
                 break;
+//            case 1:
+//                uiWebView.loadUrl("file:///android_asset/UI/eventsystem.html");
+//                setTitle("Event System");
+//                break;
             case 1:
-                uiWebView.loadUrl("file:///android_asset/UI/eventsystem.html");
-                setTitle("Event System");
-                break;
-            case 2:
                 uiWebView.loadUrl("file:///android_asset/UI/panel.html");
                 setTitle("Panel");
                 break;
-            case 3:
+            case 2:
                 uiWebView.loadUrl("file:///android_asset/UI/text.html");
                 setTitle("Text");
                 break;
-            case 4:
+            case 3:
                 uiWebView.loadUrl("file:///android_asset/UI/image.html");
                 setTitle("Image и Raw Image");
                 break;
-            case 5:
+            case 4:
                 uiWebView.loadUrl("file:///android_asset/UI/button.html");
                 setTitle("Button");
                 break;
-            case 6:
+            case 5:
                 uiWebView.loadUrl("file:///android_asset/UI/toggle.html");
                 setTitle("Toggle");
                 break;
-            case 7:
+            case 6:
                 uiWebView.loadUrl("file:///android_asset/UI/slider.html");
                 setTitle("Slider");
                 break;
-            case 8:
+            case 7:
                 uiWebView.loadUrl("file:///android_asset/UI/dropdown.html");
                 setTitle("Dropdown");
                 break;
-            case 9:
+            case 8:
                 uiWebView.loadUrl("file:///android_asset/UI/inputfield.html");
                 setTitle("Input Field");
                 break;
-            case 10:
+            case 9:
                 uiWebView.loadUrl("file:///android_asset/UI/scrollbar.html");
                 setTitle("Scrollbar");
                 break;
-            case 11:
+            case 10:
                 uiWebView.loadUrl("file:///android_asset/UI/scrollview.html");
                 setTitle("Scroll View");
                 break;

@@ -2,6 +2,7 @@ package com.joymaker.unity;
 
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -30,7 +31,7 @@ public class MainFragment extends Fragment {
         v = inflater.inflate(R.layout.fragment_root, container, false);
         mainListView = v.findViewById(R.id.mainListView);
         flb = v.findViewById(R.id.floatingActionButton);
-        flb.setImageResource(R.drawable.keys);
+        flb.setColorFilter(Color.argb(255,255,255,255));
         String[] l = {"Интерфейс Unity",
                       "Камера",
                       "Освещение",

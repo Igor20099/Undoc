@@ -57,7 +57,7 @@ public class DetailsComponentsActivity extends AppCompatActivity {
                 break;
             case 7:
                 componentWebView.loadUrl("file:///android_asset/components/joints.html");
-                setTitle("Joints(соединение объектов)");
+                setTitle("Joints(Соединения)");
                 break;
         }
     }
