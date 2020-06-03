@@ -49,16 +49,14 @@ public class TestFragment extends Fragment {
                 answer2.setEnabled(false);
                 answer3.setEnabled(false);
                 answer4.setEnabled(false);
-
                 nextQuestion.setVisibility(View.VISIBLE);
                 correctAnswerTextView.setVisibility(View.VISIBLE);
-                if(answer1.getText() == answer) {
-                    if(answer1.getText() == answer) {
+                    if(answer1.getText().toString().equals(answer)) {
                         answer1.setBackgroundColor(Color.GREEN);
                         correctAnswerTextView.setTextColor(getResources().getColor(R.color.colorDarkGreen));
                         correctAnswerTextView.setText("Верно. " + fullCorrectAnswer);
                     }
-                }
+
                 else {
                     answer1.setBackgroundColor(Color.RED);
                     correctAnswerTextView.setTextColor(Color.RED);
@@ -75,7 +73,7 @@ public class TestFragment extends Fragment {
                 answer4.setEnabled(false);
                 nextQuestion.setVisibility(View.VISIBLE);
                 correctAnswerTextView.setVisibility(View.VISIBLE);
-                if(answer2.getText() == answer) {
+                if(answer2.getText().toString().equals(answer)) {
                     answer2.setBackgroundColor(Color.GREEN);
                     correctAnswerTextView.setTextColor(getResources().getColor(R.color.colorDarkGreen));
                     correctAnswerTextView.setText("Верно. " + fullCorrectAnswer);
@@ -96,7 +94,7 @@ public class TestFragment extends Fragment {
                 answer4.setEnabled(false);
                 nextQuestion.setVisibility(View.VISIBLE);
                 correctAnswerTextView.setVisibility(View.VISIBLE);
-                if(answer3.getText() == answer) {
+                if(answer3.getText().toString().equals(answer)) {
                     answer3.setBackgroundColor(Color.GREEN);
                     correctAnswerTextView.setTextColor(getResources().getColor(R.color.colorDarkGreen));
                     correctAnswerTextView.setText("Верно. " + fullCorrectAnswer);
@@ -117,7 +115,7 @@ public class TestFragment extends Fragment {
                 answer3.setEnabled(false);
                 nextQuestion.setVisibility(View.VISIBLE);
                 correctAnswerTextView.setVisibility(View.VISIBLE);
-                if(answer4.getText() == answer) {
+                if(answer4.getText().toString().equals(answer)) {
                     answer4.setBackgroundColor(Color.GREEN);
                     correctAnswerTextView.setTextColor(getResources().getColor(R.color.colorDarkGreen));
                     correctAnswerTextView.setText("Верно. " + fullCorrectAnswer);
